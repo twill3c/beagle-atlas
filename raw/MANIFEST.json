@@ -1,0 +1,101 @@
+{
+  "$comment": "beagle-atlas L0 底本マニフェスト。取得日・ハッシュ・加工手順を固定する。",
+  "work": {
+    "title": "Journal of researches into the natural history and geology of the countries visited during the voyage of H.M.S. Beagle round the world, under the Command of Capt. Fitz Roy, R.N.",
+    "author": "Charles Darwin (1809-1882)",
+    "edition": "2d ed.",
+    "publisher": "London: John Murray",
+    "year": 1845,
+    "freeman_number": "F14",
+    "copyright_status": "public domain",
+    "copyright_basis": "1845 年刊・著者 1882 年没。原文は各国でパブリックドメイン。"
+  },
+  "edition_determination": {
+    "method": "書誌メタデータではなく本文の序文日付で確定した",
+    "evidence": "序文末尾の日付 'DOWN, BROMLEY, KENT, June 9, 1845' および 'I have in this edition largely condensed and corrected some parts' の記述",
+    "caution": "Project Gutenberg の書誌ページは 'published in 1839' と表示する。書誌を信じると版を取り違える。",
+    "measured_on": "2026-09-04"
+  },
+  "sources": [
+    {
+      "id": "A",
+      "role": "正本",
+      "name": "Darwin Online (F14)",
+      "url": "https://darwin-online.org.uk/converted/published/1845_Beagle_F14/1845_Beagle_F14.html",
+      "retrieved_utc": "2026-09-03T22:32Z",
+      "file": "f14.converted.html",
+      "bytes": 1345211,
+      "sha256": "df662f2b873fe5213ad049b83567b6ba3ff1bcb8d8608f64940eb6a73351db2f",
+      "alternate_url": "https://darwin-online.org.uk/content/contentblock?basepage=1&itemID=F14&hitpage=1&viewtype=text",
+      "alternate_sha256": "60cbbb92e8ae63f86ba7e44689cde089bf23b897cc1ef266b5b17a2d6a3549e8",
+      "transcription_traits": [
+        "頁区切りを [page N] で保持(548 箇所)",
+        "頁番号と折丁記号(2 F・2 G 2 等)を独立した段落として持つ(541 段落)",
+        "脚注を頁上の出現位置に置く",
+        "1845 年版の索引(INDEX)を収録する"
+      ],
+      "known_errors": [
+        {
+          "id": "E-01",
+          "where": "本文 第20章 見出し",
+          "observed": "CHAPTER XXX.",
+          "expected": "CHAPTER XX.",
+          "found_by": "二経路照合(G-14)",
+          "handling": "正規化時に序数で対応づけ、異常として報告する。黙って書き換えない。"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "role": "照合",
+      "name": "Project Gutenberg eBook #944",
+      "url": "https://www.gutenberg.org/cache/epub/944/pg944.txt",
+      "retrieved_utc": "2026-09-03T22:32Z",
+      "file_raw": "pg944.raw.txt",
+      "bytes_raw": 1227345,
+      "sha256_raw": "e13d57170a6dd9f7d97ddbc14cbde961dffbd95e8861ed199e5f00a525e7e52a",
+      "file_body": "pg944.body.txt",
+      "bytes_body": 1188573,
+      "sha256_body": "84f677fd4d7b648faaf979dfa789f36a0f5e4a39fdb1da31e489a5aa331c6b27",
+      "transcription_traits": [
+        "イタリックを _..._ で表す",
+        "度記号を 'degs.' で表す",
+        "脚注を各章の末尾に集める(原著の頁上位置ではない)",
+        "索引を収録しない"
+      ]
+    }
+  ],
+  "gutenberg_header_strip": {
+    "policy": "PG のヘッダ・フッタ・商標表示を除去し、パブリックドメインの本文のみを保持する。除去後は PG ライセンスの適用対象外となる。",
+    "procedure": "pg944.raw.txt の 19,357 行から、'*** START OF THE PROJECT GUTENBERG EBOOK ***' 行(27 行目)と '*** END OF ... ***' 行(19,007 行目)の内側 18,979 行(28..19006)のみを取り出した",
+    "verification": {
+      "residual_trademark_mentions": 0,
+      "method": "grep -ic 'gutenberg' pg944.body.txt",
+      "measured_on": "2026-09-04"
+    }
+  },
+  "provenance_statement_ja": "底本は Charles Darwin, Journal of Researches into the Natural History and Geology of the Countries Visited during the Voyage of H.M.S. Beagle round the World, 2nd edition (London: John Murray, 1845)。原文はパブリックドメイン。電子テキストは Darwin Online の翻刻(F14)を正本とし、Project Gutenberg 電子書籍 #944 のプレーンテキストを第二経路として突合した。後者については配布元が付した前書き・後書き・商標表示を取り除き、パブリックドメインの本文のみを用いている。翻刻の相違は台帳に記録し、本サイトの「底本について」に掲げる。",
+  "l0_measurements": {
+    "measured_on": "2026-09-04",
+    "measurement_source": "etl/sources.py(出荷コード)による再計算。探索コードの値と 2 項目食い違ったため実測で置き直した(2026-09-04)。",
+    "chapters": 21,
+    "paragraphs_darwin_online": 3170,
+    "typographic_residue_paragraphs_removed": 542,
+    "typographic_residue_words_removed": 575,
+    "paragraphs_gutenberg": 1140,
+    "paragraph_note": "Darwin Online の段落は頁で分断されるため、段落単位の 1:1 対応は取れない。照合は語列で行う。",
+    "words_normalized_darwin_online": 220950,
+    "words_normalized_gutenberg": 208201,
+    "words_body_only_darwin_online": 206599,
+    "words_body_only_gutenberg": 207462,
+    "words_outside_chapters_darwin_online": 14351,
+    "words_outside_chapters_gutenberg": 739,
+    "word_gap_note": "総語数の差 12,749 語は全て章外に由来する。本文 21 章だけで比べると差は -863 語(0.4%)。S-A は目次・索引・出版社広告を含み、S-B は含まない。",
+    "freeman_stated_wordcount": 213000,
+    "sequence_agreement_median": 0.9542,
+    "sequence_agreement_min": 0.8759,
+    "multiset_agreement_median": 0.9911,
+    "multiset_agreement_min": 0.9494,
+    "interpretation": "語彙保存(順序無視)が中央値 0.991 に対し順序込みが 0.954 に留まる差は、主として脚注の位置(PG は章末に集め、Darwin Online は頁上に置く)による。欠落ではなく並びの差である。"
+  }
+}
