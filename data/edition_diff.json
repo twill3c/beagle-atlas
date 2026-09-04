@@ -1,0 +1,577 @@
+{
+  "schema": "beagle-atlas/edition_diff@1",
+  "preregistered": "SPEC §6.0(2026-09-05 登録。この計算より前に閾値と対象章を凍結)",
+  "method": "章番号で対応づけず、文の単位で二版を整列した。1845 年版の各章に対応する 1839 年版の範囲は、整列で一致した文の最小・最大位置で決める。",
+  "sources": {
+    "1845": {
+      "file": "f14.converted.html",
+      "chapters": 21,
+      "sentences": 9937
+    },
+    "1839": {
+      "file": "f10_3.converted.html",
+      "chapters": 23,
+      "sentences": 12215
+    }
+  },
+  "alignment": {
+    "matching_blocks": 1393,
+    "matched_sentences": 3048,
+    "matched_pct_of_1845": 30.7
+  },
+  "totals": {
+    "words_1845": 211611,
+    "words_1839": 235799
+  },
+  "chapters": [
+    {
+      "chapter_1845": 1,
+      "words_1845": 6945,
+      "words_1839_aligned": 6972,
+      "ratio": 0.9961,
+      "span_1839": [
+        0,
+        386
+      ],
+      "anchor_span_1839": [
+        0,
+        385
+      ],
+      "anchors": 386,
+      "chapters_1839": [
+        1
+      ],
+      "rank": 8
+    },
+    {
+      "chapter_1845": 2,
+      "words_1845": 7803,
+      "words_1839_aligned": 8135,
+      "ratio": 0.9592,
+      "span_1839": [
+        386,
+        799
+      ],
+      "anchor_span_1839": [
+        386,
+        796
+      ],
+      "anchors": 411,
+      "chapters_1839": [
+        2
+      ],
+      "rank": 10
+    },
+    {
+      "chapter_1845": 3,
+      "words_1845": 9529,
+      "words_1839_aligned": 10592,
+      "ratio": 0.8996,
+      "span_1839": [
+        799,
+        1330
+      ],
+      "anchor_span_1839": [
+        801,
+        1329
+      ],
+      "anchors": 529,
+      "chapters_1839": [
+        2,
+        3
+      ],
+      "rank": 15
+    },
+    {
+      "chapter_1845": 4,
+      "words_1845": 7536,
+      "words_1839_aligned": 8128,
+      "ratio": 0.9272,
+      "span_1839": [
+        1330,
+        1743
+      ],
+      "anchor_span_1839": [
+        1330,
+        1742
+      ],
+      "anchors": 413,
+      "chapters_1839": [
+        4
+      ],
+      "rank": 13
+    },
+    {
+      "chapter_1845": 5,
+      "words_1845": 10189,
+      "words_1839_aligned": 10756,
+      "ratio": 0.9473,
+      "span_1839": [
+        1743,
+        2288
+      ],
+      "anchor_span_1839": [
+        1743,
+        2287
+      ],
+      "anchors": 545,
+      "chapters_1839": [
+        5
+      ],
+      "rank": 12
+    },
+    {
+      "chapter_1845": 6,
+      "words_1845": 6771,
+      "words_1839_aligned": 6557,
+      "ratio": 1.0326,
+      "span_1839": [
+        2288,
+        2625
+      ],
+      "anchor_span_1839": [
+        2288,
+        2624
+      ],
+      "anchors": 337,
+      "chapters_1839": [
+        6
+      ],
+      "rank": 7
+    },
+    {
+      "chapter_1845": 7,
+      "words_1845": 7983,
+      "words_1839_aligned": 9534,
+      "ratio": 0.8373,
+      "span_1839": [
+        2625,
+        3151
+      ],
+      "anchor_span_1839": [
+        2625,
+        3150
+      ],
+      "anchors": 526,
+      "chapters_1839": [
+        7
+      ],
+      "rank": 18
+    },
+    {
+      "chapter_1845": 8,
+      "words_1845": 14634,
+      "words_1839_aligned": 15003,
+      "ratio": 0.9754,
+      "span_1839": [
+        3151,
+        3918
+      ],
+      "anchor_span_1839": [
+        3152,
+        3821
+      ],
+      "anchors": 670,
+      "chapters_1839": [
+        7,
+        8,
+        9
+      ],
+      "rank": 9
+    },
+    {
+      "chapter_1845": 9,
+      "words_1845": 11397,
+      "words_1839_aligned": 6976,
+      "ratio": 1.6337,
+      "span_1839": [
+        3918,
+        4252
+      ],
+      "anchor_span_1839": [
+        4015,
+        4250
+      ],
+      "anchors": 236,
+      "chapters_1839": [
+        9,
+        10,
+        11
+      ],
+      "rank": 1
+    },
+    {
+      "chapter_1845": 10,
+      "words_1845": 11223,
+      "words_1839_aligned": 7129,
+      "ratio": 1.5743,
+      "span_1839": [
+        4252,
+        4616
+      ],
+      "anchor_span_1839": [
+        4254,
+        4546
+      ],
+      "anchors": 293,
+      "chapters_1839": [
+        11,
+        12
+      ],
+      "rank": 2
+    },
+    {
+      "chapter_1845": 11,
+      "words_1845": 8597,
+      "words_1839_aligned": 22470,
+      "ratio": 0.3826,
+      "span_1839": [
+        4616,
+        5673
+      ],
+      "anchor_span_1839": [
+        4686,
+        5670
+      ],
+      "anchors": 985,
+      "chapters_1839": [
+        12,
+        13
+      ],
+      "rank": 21
+    },
+    {
+      "chapter_1845": 12,
+      "words_1845": 8547,
+      "words_1839_aligned": 9218,
+      "ratio": 0.9272,
+      "span_1839": [
+        5673,
+        6173
+      ],
+      "anchor_span_1839": [
+        5676,
+        6171
+      ],
+      "anchors": 496,
+      "chapters_1839": [
+        13,
+        14,
+        15
+      ],
+      "rank": 14
+    },
+    {
+      "chapter_1845": 13,
+      "words_1845": 7568,
+      "words_1839_aligned": 8467,
+      "ratio": 0.8938,
+      "span_1839": [
+        6173,
+        6622
+      ],
+      "anchor_span_1839": [
+        6174,
+        6617
+      ],
+      "anchors": 444,
+      "chapters_1839": [
+        15
+      ],
+      "rank": 16
+    },
+    {
+      "chapter_1845": 14,
+      "words_1845": 9039,
+      "words_1839_aligned": 8494,
+      "ratio": 1.0642,
+      "span_1839": [
+        6622,
+        7072
+      ],
+      "anchor_span_1839": [
+        6626,
+        7033
+      ],
+      "anchors": 408,
+      "chapters_1839": [
+        16
+      ],
+      "rank": 6
+    },
+    {
+      "chapter_1845": 15,
+      "words_1845": 9886,
+      "words_1839_aligned": 13431,
+      "ratio": 0.7361,
+      "span_1839": [
+        7072,
+        7693
+      ],
+      "anchor_span_1839": [
+        7111,
+        7691
+      ],
+      "anchors": 581,
+      "chapters_1839": [
+        16,
+        17,
+        18
+      ],
+      "rank": 19
+    },
+    {
+      "chapter_1845": 16,
+      "words_1845": 14735,
+      "words_1839_aligned": 13497,
+      "ratio": 1.0917,
+      "span_1839": [
+        7693,
+        8364
+      ],
+      "anchor_span_1839": [
+        7694,
+        8351
+      ],
+      "anchors": 658,
+      "chapters_1839": [
+        18
+      ],
+      "rank": 5
+    },
+    {
+      "chapter_1845": 17,
+      "words_1845": 11567,
+      "words_1839_aligned": 9451,
+      "ratio": 1.2239,
+      "span_1839": [
+        8364,
+        8856
+      ],
+      "anchor_span_1839": [
+        8376,
+        8846
+      ],
+      "anchors": 471,
+      "chapters_1839": [
+        18,
+        19
+      ],
+      "rank": 4
+    },
+    {
+      "chapter_1845": 18,
+      "words_1845": 12020,
+      "words_1839_aligned": 13530,
+      "ratio": 0.8884,
+      "span_1839": [
+        8856,
+        9561
+      ],
+      "anchor_span_1839": [
+        8866,
+        9559
+      ],
+      "anchors": 694,
+      "chapters_1839": [
+        19,
+        20,
+        21
+      ],
+      "rank": 17
+    },
+    {
+      "chapter_1845": 19,
+      "words_1845": 8661,
+      "words_1839_aligned": 9080,
+      "ratio": 0.9539,
+      "span_1839": [
+        9561,
+        10006
+      ],
+      "anchor_span_1839": [
+        9562,
+        10002
+      ],
+      "anchors": 441,
+      "chapters_1839": [
+        21,
+        22
+      ],
+      "rank": 11
+    },
+    {
+      "chapter_1845": 20,
+      "words_1845": 12206,
+      "words_1839_aligned": 8326,
+      "ratio": 1.466,
+      "span_1839": [
+        10006,
+        10388
+      ],
+      "anchor_span_1839": [
+        10009,
+        10267
+      ],
+      "anchors": 259,
+      "chapters_1839": [
+        22
+      ],
+      "rank": 3
+    },
+    {
+      "chapter_1845": 21,
+      "words_1845": 14775,
+      "words_1839_aligned": 30053,
+      "ratio": 0.4916,
+      "span_1839": [
+        10388,
+        12215
+      ],
+      "anchor_span_1839": [
+        10508,
+        12211
+      ],
+      "anchors": 1704,
+      "chapters_1839": [
+        22,
+        23
+      ],
+      "rank": 20
+    }
+  ],
+  "ranking_desc": [
+    {
+      "chapter_1845": 9,
+      "ratio": 1.6337,
+      "rank": 1
+    },
+    {
+      "chapter_1845": 10,
+      "ratio": 1.5743,
+      "rank": 2
+    },
+    {
+      "chapter_1845": 20,
+      "ratio": 1.466,
+      "rank": 3
+    },
+    {
+      "chapter_1845": 17,
+      "ratio": 1.2239,
+      "rank": 4
+    },
+    {
+      "chapter_1845": 16,
+      "ratio": 1.0917,
+      "rank": 5
+    },
+    {
+      "chapter_1845": 14,
+      "ratio": 1.0642,
+      "rank": 6
+    },
+    {
+      "chapter_1845": 6,
+      "ratio": 1.0326,
+      "rank": 7
+    },
+    {
+      "chapter_1845": 1,
+      "ratio": 0.9961,
+      "rank": 8
+    },
+    {
+      "chapter_1845": 8,
+      "ratio": 0.9754,
+      "rank": 9
+    },
+    {
+      "chapter_1845": 2,
+      "ratio": 0.9592,
+      "rank": 10
+    },
+    {
+      "chapter_1845": 19,
+      "ratio": 0.9539,
+      "rank": 11
+    },
+    {
+      "chapter_1845": 5,
+      "ratio": 0.9473,
+      "rank": 12
+    },
+    {
+      "chapter_1845": 4,
+      "ratio": 0.9272,
+      "rank": 13
+    },
+    {
+      "chapter_1845": 12,
+      "ratio": 0.9272,
+      "rank": 14
+    },
+    {
+      "chapter_1845": 3,
+      "ratio": 0.8996,
+      "rank": 15
+    },
+    {
+      "chapter_1845": 13,
+      "ratio": 0.8938,
+      "rank": 16
+    },
+    {
+      "chapter_1845": 18,
+      "ratio": 0.8884,
+      "rank": 17
+    },
+    {
+      "chapter_1845": 7,
+      "ratio": 0.8373,
+      "rank": 18
+    },
+    {
+      "chapter_1845": 15,
+      "ratio": 0.7361,
+      "rank": 19
+    },
+    {
+      "chapter_1845": 21,
+      "ratio": 0.4916,
+      "rank": 20
+    },
+    {
+      "chapter_1845": 11,
+      "ratio": 0.3826,
+      "rank": 21
+    }
+  ],
+  "gates": {
+    "G-20a": {
+      "claim": "本文全体の語数が減る(1845 < 1839)",
+      "measured": {
+        "words_1845": 211611,
+        "words_1839": 235799
+      },
+      "passes": true
+    },
+    "G-20b": {
+      "claim": "ガラパゴス範囲の語数が増える(比 > 1.00)",
+      "measured": {
+        "chapter": 17,
+        "ratio": 1.2239
+      },
+      "passes": true
+    },
+    "G-20c": {
+      "claim": "その増加率が全範囲中で上位 3 位以内",
+      "measured": {
+        "rank": 4,
+        "of": 21
+      },
+      "passes": false
+    }
+  },
+  "verdict": "不成立"
+}
