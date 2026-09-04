@@ -27,6 +27,12 @@
   }
 }
 
+/* フッタは 5 項目あり、狭い幅では 3 行に折り返す(実測 320/390px で 81.7px)。
+   逃げが足りないと本文の末尾が隠れるので、折り返す幅では --footer-h を広げる。 */
+@media (max-width: 48rem) {
+  :root { --footer-h: 5.8rem; }
+}
+
 * { box-sizing: border-box; }
 
 html { -webkit-text-size-adjust: 100%; }
