@@ -78,9 +78,18 @@ python -m etl.build_index_gold     # 決定的。同一入力なら bit 一致
 ## 開発
 
 ```bash
-python -m pytest -q          # テスト
-python harness/text_hygiene.py   # 字種・制御文字の検査
+npm run data       # data/*.json を作り直す(索引 gold と二経路照合・どちらも決定的)
+npm run verify     # 型検査 → pytest → 静的ビルド → 実ブラウザ検品
+npm run smoke      # 実ブラウザ検品のみ(横溢れ・固定フッタ・絞り込みの挙動)
+npm run hygiene    # 字種・制御文字の検査
+npm run deploy     # Vercel 本番(CLI 運用・GitHub 連携なし)
 ```
+
+画面は **`data/*.json` を読むだけ**にしてあり、数値をページ側に決め打ちしない(G-11)。
+配信は完全な静的書き出しで、serverless function をひとつも作らない。
+
+**静的検査が全部緑でも見つからない欠陥がある。** 索引ページは 320px で 69px 横に溢れていたが、
+型検査もテストも字種検査も緑のままだった。捕まえたのは実ブラウザ検品だけである。
 
 ## ライセンス
 

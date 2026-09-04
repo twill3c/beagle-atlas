@@ -1,0 +1,240 @@
+:root {
+  --paper: #faf8f4;
+  --surface: #fffefb;
+  --ink: #22201c;
+  --ink-2: #5f5a51;
+  --ink-3: #8a8377;
+  --hairline: #e0dad0;
+  --accent: #2f5d62;
+  --accent-soft: #e6efee;
+  --warn: #8a4b2a;
+  --ok: #3d6b45;
+  --footer-h: 3.4rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14130f;
+    --surface: #1b1a16;
+    --ink: #ece7dd;
+    --ink-2: #b3ab9d;
+    --ink-3: #867f72;
+    --hairline: #322f29;
+    --accent: #8fc4c2;
+    --accent-soft: #1f2c2c;
+    --warn: #d79b74;
+    --ok: #8fbf98;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", Georgia, serif;
+  font-size: 16px;
+  line-height: 1.85;
+  padding-bottom: calc(var(--footer-h) + 1.5rem);
+}
+
+main {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 0 1.1rem 3rem;
+}
+
+h1, h2, h3 { line-height: 1.4; font-weight: 600; }
+h1 { font-size: 1.7rem; margin: 0 0 0.3rem; letter-spacing: 0.02em; }
+h2 {
+  font-size: 1.18rem;
+  margin: 2.6rem 0 0.9rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--hairline);
+}
+h3 { font-size: 1rem; margin: 1.8rem 0 0.5rem; color: var(--ink-2); }
+
+p { margin: 0.85rem 0; }
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+.lede { color: var(--ink-2); font-size: 1.02rem; margin-bottom: 1.6rem; }
+
+.note {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--accent);
+  padding: 0.75rem 1rem;
+  margin: 1.3rem 0;
+  font-size: 0.93rem;
+  color: var(--ink-2);
+}
+.note strong { color: var(--ink); }
+
+/* 数値の並び */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 0.6rem;
+  margin: 1.2rem 0;
+  padding: 0;
+  list-style: none;
+}
+.stats li {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  padding: 0.6rem 0.75rem;
+}
+.stats .k { display: block; font-size: 0.76rem; color: var(--ink-3); line-height: 1.5; }
+.stats .v {
+  display: block;
+  font-size: 1.32rem;
+  font-variant-numeric: tabular-nums;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color: var(--ink);
+}
+.stats .u { font-size: 0.78rem; color: var(--ink-3); margin-left: 0.2rem; }
+
+/* 表 */
+.scroll { overflow-x: auto; margin: 1.2rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+caption {
+  caption-side: top;
+  text-align: left;
+  color: var(--ink-3);
+  font-size: 0.8rem;
+  padding-bottom: 0.45rem;
+}
+th, td { padding: 0.38rem 0.6rem; border-bottom: 1px solid var(--hairline); text-align: left; }
+th { color: var(--ink-2); font-weight: 600; font-size: 0.8rem; white-space: nowrap; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
+tbody tr:hover { background: var(--accent-soft); }
+
+.bar {
+  display: inline-block;
+  height: 0.5rem;
+  background: var(--accent);
+  border-radius: 1px;
+  vertical-align: middle;
+  opacity: 0.75;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 2px;
+  border: 1px solid var(--hairline);
+  color: var(--ink-2);
+  background: var(--surface);
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+.tag--ok { color: var(--ok); border-color: currentColor; }
+.tag--warn { color: var(--warn); border-color: currentColor; }
+
+code, .mono {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+
+/* ナビ */
+.site-nav {
+  border-bottom: 1px solid var(--hairline);
+  background: var(--surface);
+  margin-bottom: 2rem;
+}
+.site-nav__inner {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 0.7rem 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 1rem;
+}
+.site-nav__brand { font-weight: 600; letter-spacing: 0.04em; }
+.site-nav__brand a { color: var(--ink); text-decoration: none; }
+.site-nav__links { display: flex; gap: 0.9rem; font-size: 0.87rem; }
+
+/* 索引の絞り込み */
+.filter {
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--hairline);
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.8rem;
+  align-items: center;
+}
+.filter input[type="search"] {
+  flex: 1 1 14rem;
+  min-width: 0;
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  background: var(--surface);
+  color: var(--ink);
+}
+.filter__count { font-size: 0.83rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
+.entries { list-style: none; margin: 0; padding: 0; font-size: 0.92rem; }
+.entries li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--hairline);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem 0.8rem;
+  align-items: baseline;
+}
+.entries li.sub { padding-left: 1.5rem; }
+.entries .term { flex: 1 1 12rem; min-width: 0; overflow-wrap: anywhere; }
+.entries .sub-mark { color: var(--ink-3); }
+/* 頁参照は縮ませる。`0 0 auto` だと参照の多い項目(D'Orbigny 等)が
+   狭い画面を押し広げる —— 320px で 69px の横溢れを実ブラウザ検品が捕まえた */
+.entries .pages {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: var(--ink-2);
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+  text-align: right;
+}
+.entries .see { color: var(--ink-3); font-style: italic; }
+
+.empty { color: var(--ink-3); padding: 1.5rem 0; }
+
+/* fleet: fixed footer */
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--surface);
+  border-top: 1px solid var(--hairline);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  z-index: 20;
+}
+.site-footer__inner {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 0.5rem 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem 0.35rem;
+  color: var(--ink-2);
+}
+.site-footer a { color: var(--ink-2); }
+.site-footer__copy { color: var(--ink-3); }
+.fsep { color: var(--ink-3); }

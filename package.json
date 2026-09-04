@@ -1,0 +1,30 @@
+{
+  "name": "beagle-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/sync-public.mjs && next build",
+    "typecheck": "tsc --noEmit",
+    "test:py": "python -m pytest -q",
+    "hygiene": "python harness/text_hygiene.py",
+    "data": "python -m etl.build_index_gold && python -m etl.build_collation",
+    "smoke": "node harness/smoke.mjs",
+    "verify": "npm run typecheck && npm run test:py && npm run build && npm run smoke",
+    "deploy": "vercel deploy --prod --yes --archive=tgz --scope twill3c-8670s-projects"
+  },
+  "dependencies": {
+    "next": "^15.5.24",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "playwright": "^1.62.1",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "schema": "beagle-atlas/collation@1",
+  "work": {
+    "title": "Journal of Researches into the Natural History and Geology of the Countries Visited during the Voyage of H.M.S. Beagle round the World",
+    "author": "Charles Darwin",
+    "edition": "2nd ed.",
+    "publisher": "London: John Murray",
+    "year": 1845,
+    "freeman": "F14",
+    "copyright_status": "public domain"
+  },
+  "sources": {
+    "A": {
+      "role": "正本",
+      "name": "Darwin Online (F14)",
+      "sha256": "df662f2b873fe5213ad049b83567b6ba3ff1bcb8d8608f64940eb6a73351db2f"
+    },
+    "B": {
+      "role": "照合",
+      "name": "Project Gutenberg #944(配布元のヘッダ・フッタを除去)",
+      "sha256": "84f677fd4d7b648faaf979dfa789f36a0f5e4a39fdb1da31e489a5aa331c6b27"
+    }
+  },
+  "gate": {
+    "id": "G-14",
+    "measure": "multiset",
+    "threshold": 0.94,
+    "note": "閾値は語彙保存(順序無視)に置く。順序込みの一致率は脚注の配置差で下がるため、記録するのみで閾値にしない"
+  },
+  "totals": {
+    "chapters": 21,
+    "paragraphs_a": 3170,
+    "paragraphs_b": 1140,
+    "typographic_residue_removed_a": 542,
+    "words_all_a": 220950,
+    "words_all_b": 208201,
+    "words_body_a": 206599,
+    "words_body_b": 207462,
+    "words_outside_chapters_a": 14351,
+    "words_outside_chapters_b": 739,
+    "sequence_median": 0.9542,
+    "sequence_min": 0.8759,
+    "multiset_median": 0.9911,
+    "multiset_min": 0.9494
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "words_a": 6945,
+      "words_b": 6953,
+      "sequence": 0.9432,
+      "multiset": 0.9895,
+      "passes_gate": true
+    },
+    {
+      "chapter": 2,
+      "words_a": 7803,
+      "words_b": 8107,
+      "sequence": 0.9204,
+      "multiset": 0.9494,
+      "passes_gate": true
+    },
+    {
+      "chapter": 3,
+      "words_a": 9529,
+      "words_b": 9821,
+      "sequence": 0.9437,
+      "multiset": 0.9657,
+      "passes_gate": true
+    },
+    {
+      "chapter": 4,
+      "words_a": 7536,
+      "words_b": 7538,
+      "sequence": 0.9603,
+      "multiset": 0.9932,
+      "passes_gate": true
+    },
+    {
+      "chapter": 5,
+      "words_a": 10189,
+      "words_b": 10275,
+      "sequence": 0.9083,
+      "multiset": 0.9833,
+      "passes_gate": true
+    },
+    {
+      "chapter": 6,
+      "words_a": 6771,
+      "words_b": 6769,
+      "sequence": 0.9505,
+      "multiset": 0.9907,
+      "passes_gate": true
+    },
+    {
+      "chapter": 7,
+      "words_a": 7983,
+      "words_b": 7988,
+      "sequence": 0.9347,
+      "multiset": 0.9912,
+      "passes_gate": true
+    },
+    {
+      "chapter": 8,
+      "words_a": 14634,
+      "words_b": 14637,
+      "sequence": 0.9689,
+      "multiset": 0.994,
+      "passes_gate": true
+    },
+    {
+      "chapter": 9,
+      "words_a": 11397,
+      "words_b": 11388,
+      "sequence": 0.9411,
+      "multiset": 0.9911,
+      "passes_gate": true
+    },
+    {
+      "chapter": 10,
+      "words_a": 11223,
+      "words_b": 11202,
+      "sequence": 0.9709,
+      "multiset": 0.9922,
+      "passes_gate": true
+    },
+    {
+      "chapter": 11,
+      "words_a": 8597,
+      "words_b": 8965,
+      "sequence": 0.8759,
+      "multiset": 0.9521,
+      "passes_gate": true
+    },
+    {
+      "chapter": 12,
+      "words_a": 8547,
+      "words_b": 8346,
+      "sequence": 0.9675,
+      "multiset": 0.9705,
+      "passes_gate": true
+    },
+    {
+      "chapter": 13,
+      "words_a": 7568,
+      "words_b": 7561,
+      "sequence": 0.9627,
+      "multiset": 0.9931,
+      "passes_gate": true
+    },
+    {
+      "chapter": 14,
+      "words_a": 9039,
+      "words_b": 9029,
+      "sequence": 0.9917,
+      "multiset": 0.9946,
+      "passes_gate": true
+    },
+    {
+      "chapter": 15,
+      "words_a": 9886,
+      "words_b": 9877,
+      "sequence": 0.967,
+      "multiset": 0.9934,
+      "passes_gate": true
+    },
+    {
+      "chapter": 16,
+      "words_a": 14735,
+      "words_b": 14709,
+      "sequence": 0.9716,
+      "multiset": 0.9909,
+      "passes_gate": true
+    },
+    {
+      "chapter": 17,
+      "words_a": 11567,
+      "words_b": 11883,
+      "sequence": 0.9542,
+      "multiset": 0.9679,
+      "passes_gate": true
+    },
+    {
+      "chapter": 18,
+      "words_a": 12020,
+      "words_b": 11988,
+      "sequence": 0.9931,
+      "multiset": 0.9923,
+      "passes_gate": true
+    },
+    {
+      "chapter": 19,
+      "words_a": 8661,
+      "words_b": 8665,
+      "sequence": 0.9373,
+      "multiset": 0.9942,
+      "passes_gate": true
+    },
+    {
+      "chapter": 20,
+      "words_a": 12206,
+      "words_b": 12026,
+      "sequence": 0.9546,
+      "multiset": 0.9802,
+      "passes_gate": true
+    },
+    {
+      "chapter": 21,
+      "words_a": 9763,
+      "words_b": 9735,
+      "sequence": 0.9404,
+      "multiset": 0.9916,
+      "passes_gate": true
+    }
+  ],
+  "anomalies_detected": [
+    {
+      "ordinal": 20,
+      "roman": "XXX",
+      "paragraph": 1510
+    }
+  ],
+  "ledger": [
+    {
+      "id": "E-01",
+      "side": "S-A",
+      "where": "本文 第 20 章 見出し",
+      "observed": "CHAPTER XXX.",
+      "expected": "CHAPTER XX.",
+      "handling": "黙って書き換えない。序数で対応づけ、異常として報告する"
+    },
+    {
+      "id": "E-02",
+      "side": "S-A",
+      "where": "序文の署名",
+      "observed": "June , 1845.",
+      "expected": "DOWN, BROMLEY, KENT, June 9, 1845",
+      "handling": "版の確定は年で行い、完全な日付は S-B から採る。閾値化しない"
+    }
+  ]
+}

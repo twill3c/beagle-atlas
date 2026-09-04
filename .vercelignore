@@ -1,0 +1,15 @@
+# 配信物に不要なものは送らない(初回デプロイの前に置く — Free 枠は 24 時間 5,000 ファイル)
+node_modules
+.next
+out
+.git
+raw
+logs
+tests
+etl
+harness
+schema
+__pycache__
+*.pyc
+.venv
+pytest.ini
