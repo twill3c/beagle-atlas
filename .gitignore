@@ -2,6 +2,10 @@ node_modules/
 .next/
 out/
 public/data/
+
+# S-D(Rookmaaker 2009 編の日次行程)は著作権が生きているため再配布しない。
+# etl/fetch_itinerary.py で各自が取得する。派生する「事実」だけを data/ に出す。
+raw/private/
 __pycache__/
 *.pyc
 .venv/

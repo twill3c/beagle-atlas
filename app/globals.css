@@ -10,6 +10,20 @@
   --warn: #8a4b2a;
   --ok: #3d6b45;
   --footer-h: 3.4rem;
+  /* 航海の三区分。海 → 停泊 → 陸 で寒色から暖色へ渡す */
+  --sea: #2f5d62;
+  --harbour: #8a8f5c;
+  --land: #a2603a;
+  --graticule: #ddd7cc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sea: #7fb0be;
+    --harbour: #b6b877;
+    --land: #d79b74;
+    --graticule: #2e2b25;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -146,6 +160,27 @@ code, .mono {
   font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   font-size: 0.88em;
 }
+
+/* 航路図と年表 */
+.map { width: 100%; min-width: 34rem; height: auto; display: block; }
+.ribbon { width: 100%; min-width: 26rem; height: auto; display: block; }
+.grat { stroke: var(--graticule); stroke-width: 0.6; }
+.grat--eq { stroke: var(--ink-3); stroke-width: 0.9; stroke-dasharray: 4 3; }
+.gratlabel { fill: var(--ink-3); font-size: 6px; font-family: ui-monospace, Menlo, Consolas, monospace; }
+.tick { stroke: var(--ink-2); stroke-width: 1; }
+.ticklabel { fill: var(--ink-2); font-size: 11px; font-family: ui-monospace, Menlo, Consolas, monospace; }
+
+.swatch {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 2px;
+  margin-right: 0.3rem;
+  vertical-align: baseline;
+}
+.small { font-size: 0.85rem; color: var(--ink-3); }
+.note--warn { border-left-color: var(--land); }
+.note p { margin: 0.6rem 0; }
 
 /* ナビ */
 .site-nav {
