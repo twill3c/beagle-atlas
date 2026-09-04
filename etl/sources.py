@@ -108,6 +108,20 @@ def load_gutenberg(path: str | Path) -> list[str]:
     return out
 
 
+def book_page_bounds(path: str | Path) -> tuple[int, int]:
+    """S-A の頁マーカーから本の頁範囲を導出する。
+
+    索引の頁参照がこの範囲に収まることを検算に使う(定数で書かないため)。
+    S-A のマーカーは `[page] 6` と `[page i]` の二形があり、数字を持つのは前者。
+    """
+    src = Path(path).read_text(encoding="utf-8", errors="replace")
+    nums = [int(n) for n in re.findall(r"\[page\]\s*(\d{1,4})", src)]
+    nums += [int(n) for n in re.findall(r"\[page\s+(\d{1,4})\]", src)]
+    if not nums:
+        raise ValueError("頁マーカーが 1 件も見つからない")
+    return min(nums), max(nums)
+
+
 def find_index_start(paras: list[str]) -> int | None:
     """1845 年版の索引の開始段落。無ければ None(S-B は索引を収録しない)。"""
     hits = [i for i, p in enumerate(paras) if INDEX_HEAD_RE.match(p.strip())]
