@@ -154,6 +154,42 @@ def build() -> dict:
             }
         )
 
+    fert_path = DATA / "fertility.json"
+    if fert_path.exists():
+        f = json.loads(fert_path.read_text(encoding="utf-8"))
+        h, m = f["models"]["MacBERTh"], f["models"]["DistilBERT"]
+        records.append(
+            {
+                "id": "N-5",
+                "kind": "premise",
+                "registered": "2026-09-04",
+                "judged": "2026-09-05",
+                "title": "19 世紀英語は、現代英語のモデルでは荒れる",
+                "claim": (
+                    "1845 年の綴りや語法は現代と隔たっているので、"
+                    "歴史英語で事前学習した tokenizer の方が本文を効率よく刻むはずである。"
+                ),
+                "threshold": "MacBERTh の fertility < DistilBERT の fertility",
+                "measured": (
+                    f"MacBERTh {h['fertility']:.3f} 対 DistilBERT {m['fertility']:.3f}(逆)"
+                ),
+                "verdict": "不成立",
+                "distance": f"歴史側が {f['comparison']['fertility_ratio_historical_over_modern']:.3f} 倍粗い",
+                "why_it_matters": (
+                    "語彙サイズはほぼ同じ(0.98 倍)なので、語彙の大きさでは説明できない。"
+                    "**1845 年の散文は、綴りの上では現代英語とさほど変わらない** —— "
+                    "というのが実測の答えだった。"
+                ),
+                "what_we_did_not_do": (
+                    "当初は「未知語率で基盤モデルを選ぶ」と書いていたが、"
+                    "実際には両者とも未知語率 0 だった。WordPiece はラテン文字に未知語を出さず、"
+                    "必ずサブワードに分解する。**tokenizer の性質を確かめずに指標を決めていた。**"
+                ),
+                "source": "data/fertility.json",
+                "page": "/",
+            }
+        )
+
     return {
         "schema": "beagle-atlas/discarded@1",
         "policy": (

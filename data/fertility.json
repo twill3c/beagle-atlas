@@ -1,0 +1,43 @@
+{
+  "schema": "beagle-atlas/fertility@1",
+  "question": "歴史英語で事前学習した tokenizer は、この 1845 年の本文を現代英語のものより効率よく刻むか。",
+  "method": "1845 年版本文 21 章から英字の語を取り出し、語ごとに刻んでサブワード数 ÷ 語数を測る。学習も推論もしない。",
+  "caveat": "fertility は語彙サイズの関数でもある。語彙が大きければ時代が合っていなくても下がりうるので、語彙サイズを併記しなければ比較にならない。",
+  "corpus": {
+    "source": "f14.converted.html",
+    "chapters": 21,
+    "words": 204010
+  },
+  "models": {
+    "MacBERTh": {
+      "model": "emanjavacas/MacBERTh",
+      "era": "historical",
+      "note": "1450–1950 年の歴史英語で事前学習(Manjavacas & Fonteyn)",
+      "vocab_size": 30000,
+      "words": 204010,
+      "subwords": 233228,
+      "fertility": 1.1432,
+      "words_split": 19117,
+      "split_rate": 0.0937,
+      "words_with_unk": 0,
+      "unk_rate": 0.0
+    },
+    "DistilBERT": {
+      "model": "distilbert-base-uncased",
+      "era": "modern",
+      "note": "現代英語で事前学習",
+      "vocab_size": 30522,
+      "words": 204010,
+      "subwords": 226354,
+      "fertility": 1.1095,
+      "words_split": 13370,
+      "split_rate": 0.0655,
+      "words_with_unk": 0,
+      "unk_rate": 0.0
+    }
+  },
+  "comparison": {
+    "fertility_ratio_historical_over_modern": 1.0304,
+    "vocab_ratio_historical_over_modern": 0.9829
+  }
+}
