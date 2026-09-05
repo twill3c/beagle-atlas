@@ -146,7 +146,9 @@ export default function VoyagePage() {
         左から右へ 1 日ずつ。{runs.length.toLocaleString("ja-JP")} 本の連続区間にまとめてある。
       </p>
       <div className="scroll">
-        <svg viewBox={`0 -12 ${W} ${H + 24}`} className="ribbon" role="img" aria-label="航海の年表">
+        {/* 年ラベルは y=-4 に置くが、文字の上端は font-size ぶん上に伸びる。
+            -12 始まりでは 1.6 単位はみ出していた(HC-159 の検査が検出・2026-09-05)。 */}
+        <svg viewBox={`0 -20 ${W} ${H + 32}`} className="ribbon" role="img" aria-label="航海の年表">
           {runs.map((r) => (
             <rect key={r.from} x={px(r.from)} y={0} width={Math.max(px(r.to + 1) - px(r.from), 0.4)}
               height={H} fill={COLOR[r.state]} />

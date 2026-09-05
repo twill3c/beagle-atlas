@@ -77,6 +77,42 @@ try {
           `${path} @${width}: body の逃げ ${footer.pad}px < フッタ高 ${footer.h}px`,
         );
       }
+      // 図の中の要素が viewBox に収まっているか(HC-159)。
+      // **ページの横溢れ検査は図の内側の切れを見ない。** ラベルは描画領域の外に
+      // 置かれるのが普通で、viewBox をデータの範囲から決めると静かに切り取られる。
+      const clipped = await page.evaluate(() => {
+        const out = [];
+        for (const svg of document.querySelectorAll("svg[viewBox]")) {
+          const vb = svg.viewBox.baseVal;
+          const label = svg.getAttribute("aria-label") ?? svg.getAttribute("class") ?? "svg";
+          for (const el of svg.querySelectorAll("text, rect, path, line, circle, polyline")) {
+            let b;
+            try {
+              b = el.getBBox();
+            } catch {
+              continue;
+            }
+            if (b.width === 0 && b.height === 0) continue;
+            const over = [];
+            if (b.x < vb.x - 0.5) over.push(`左 ${(vb.x - b.x).toFixed(1)}`);
+            if (b.y < vb.y - 0.5) over.push(`上 ${(vb.y - b.y).toFixed(1)}`);
+            if (b.x + b.width > vb.x + vb.width + 0.5)
+              over.push(`右 ${(b.x + b.width - vb.x - vb.width).toFixed(1)}`);
+            if (b.y + b.height > vb.y + vb.height + 0.5)
+              over.push(`下 ${(b.y + b.height - vb.y - vb.height).toFixed(1)}`);
+            if (over.length) {
+              out.push(
+                `${label} の <${el.tagName}> ${JSON.stringify(
+                  (el.textContent ?? "").trim().slice(0, 18),
+                )} が ${over.join("・")} にはみ出す`,
+              );
+            }
+          }
+        }
+        return out;
+      });
+      for (const c of clipped.slice(0, 4)) check(false, `${path} @${width}: ${c}`);
+
       check(errors.length === 0, `${path} @${width}: JS エラー ${errors[0] ?? ""}`);
       await page.close();
     }
@@ -129,5 +165,6 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(
-  `検品 OK — ${PAGES.length} ページ × ${WIDTHS.length} 幅 + 絞り込みの挙動 + G-21(落ちた主張の掲載)`,
+  `検品 OK — ${PAGES.length} ページ × ${WIDTHS.length} 幅` +
+    ` + 図の viewBox 収まり + 絞り込みの挙動 + G-21(落ちた主張の掲載)`,
 );
