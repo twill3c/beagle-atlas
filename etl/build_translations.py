@@ -20,7 +20,14 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "translations.json"
 TEXT = ROOT / "data" / "text.json"
 
-MODULES = ["etl.translations_c01_a", "etl.translations_c01_b", "etl.translations_c01_c"]
+MODULES = [
+    "etl.translations_c01_a",
+    "etl.translations_c01_b",
+    "etl.translations_c01_c",
+    "etl.translations_c02_a",
+    "etl.translations_c02_b",
+    "etl.translations_c02_c",
+]
 
 # 日本語の中に紛れた半角ラテン文字を検出する(GEN-CHARS の型)。
 # 学名・書誌参照・数値は正当なので、カタカナに挟まれた単独のラテン小文字だけを見る

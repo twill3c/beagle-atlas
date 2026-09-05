@@ -1,0 +1,1 @@
+{"v": "1.2", "ts": "2026-09-05T20:53:24+09:00", "project": "beagle-atlas", "loop_id": "loop_013", "event": "loop_start", "data": {"goal": "第 2 章 42 段落を訳し、充填率を 3.7% から上げる", "spec_refs": ["F-07", "G-12"], "scaffold_version": "v1.30.0", "agent": "claude-code", "model": "claude-opus-5[1m]"}}
