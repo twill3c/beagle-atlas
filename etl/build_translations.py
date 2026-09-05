@@ -27,6 +27,10 @@ MODULES = [
     "etl.translations_c02_a",
     "etl.translations_c02_b",
     "etl.translations_c02_c",
+    "etl.translations_c03_a",
+    "etl.translations_c03_b",
+    "etl.translations_c03_c",
+    "etl.translations_c03_d",
 ]
 
 # 日本語の中に紛れた半角ラテン文字を検出する(GEN-CHARS の型)。
