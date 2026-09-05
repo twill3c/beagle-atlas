@@ -10,6 +10,7 @@ export function SiteNav() {
         <span className="site-nav__links">
           <Link href="/voyage/">航路と年表</Link>
           <Link href="/editions/">二つの版</Link>
+          <Link href="/discarded/">測って、捨てた</Link>
           <Link href="/">底本について</Link>
           <Link href="/index-gold/">1845 年版の索引</Link>
         </span>

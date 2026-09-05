@@ -182,6 +182,50 @@ code, .mono {
 .note--warn { border-left-color: var(--land); }
 .note p { margin: 0.6rem 0; }
 
+/* 測って捨てた記録 */
+.rules { margin: 1.2rem 0; padding-left: 1.4rem; }
+.rules li { margin: 0.5rem 0; }
+
+.discard {
+  border-top: 2px solid var(--hairline);
+  padding-top: 1.1rem;
+  margin: 2.2rem 0;
+}
+.discard__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.discard__head h3 { margin: 0; font-size: 1.14rem; color: var(--ink); flex: 1 1 14rem; }
+.discard__id { color: var(--ink-3); font-size: 0.8rem; }
+.discard__claim {
+  font-size: 1.02rem;
+  border-left: 3px solid var(--land);
+  padding-left: 0.85rem;
+  margin: 0.7rem 0 1rem;
+}
+.discard__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1px;
+  background: var(--hairline);
+  border: 1px solid var(--hairline);
+  margin: 0 0 1rem;
+}
+.discard__grid > div { background: var(--surface); padding: 0.5rem 0.7rem; }
+.discard__grid dt { font-size: 0.72rem; color: var(--ink-3); margin: 0; }
+.discard__grid dd { margin: 0.1rem 0 0; font-size: 0.9rem; }
+.discard__restraint {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  padding: 0.7rem 0.9rem;
+  font-size: 0.93rem;
+  color: var(--ink-2);
+}
+.discard__restraint strong { color: var(--ink); }
+
 /* ナビ */
 .site-nav {
   border-bottom: 1px solid var(--hairline);

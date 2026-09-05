@@ -8,7 +8,7 @@ import { chromium } from "playwright";
 
 const ROOT = new URL("../out/", import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1");
 const WIDTHS = [320, 390, 768, 1280];
-const PAGES = ["/", "/index-gold/", "/voyage/", "/editions/"];
+const PAGES = ["/", "/index-gold/", "/voyage/", "/editions/", "/discarded/"];
 const MIME = {
   ".html": "text/html; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
@@ -102,6 +102,22 @@ try {
     timeout: 5000,
   });
   await page.close();
+
+  // G-21: 落ちた主張が画面から消えていないこと。
+  // **消しても他の検査は全部緑のまま通る** —— 残った主張だけが並んだ、
+  // 実態より強い顔のサイトになる。それを止めるのはこの検査だけである。
+  const discarded = JSON.parse(await readFile(join(ROOT, "data", "discarded.json"), "utf-8"));
+  const p2 = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+  await p2.goto(base + "/discarded/", { waitUntil: "networkidle" });
+  const shown = await p2.evaluate(() => document.body.innerText);
+  for (const r of discarded.records) {
+    check(shown.includes(r.title), `G-21: 落ちた主張が画面に無い: ${r.id} ${r.title}`);
+    check(shown.includes(r.measured), `G-21: 実測値が画面に無い: ${r.id} ${r.measured}`);
+    check(shown.includes(r.verdict), `G-21: 判定が画面に無い: ${r.id} ${r.verdict}`);
+  }
+  // 陽性対照: 載っていない文字列は検出されない(検査が何にでも通るわけではない)
+  check(!shown.includes("zzzz-not-on-this-page"), "G-21 の対照が働いていない");
+  await p2.close();
 } finally {
   await browser.close();
   server.close();
@@ -112,4 +128,6 @@ if (failures.length) {
   for (const f of failures) console.error("  -", f);
   process.exit(1);
 }
-console.log(`検品 OK — ${PAGES.length} ページ × ${WIDTHS.length} 幅 + 絞り込みの挙動`);
+console.log(
+  `検品 OK — ${PAGES.length} ページ × ${WIDTHS.length} 幅 + 絞り込みの挙動 + G-21(落ちた主張の掲載)`,
+);

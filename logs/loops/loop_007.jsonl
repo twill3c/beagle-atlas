@@ -1,0 +1,1 @@
+{"v": "1.2", "ts": "2026-09-05T14:36:52+09:00", "project": "beagle-atlas", "loop_id": "loop_007", "event": "loop_start", "data": {"goal": "目玉を追う路線から標準図路線へ切り替える。落ちた二つの主張を作品の主題そのものにする", "spec_refs": ["SPEC-6", "G-09", "G-20"], "scaffold_version": "v1.29.0", "agent": "claude-code", "model": "claude-opus-5[1m]"}}
