@@ -1,3 +1,5 @@
+import { VoyageMonths } from "@/components/VoyageMonths";
+import { getFigures } from "@/lib/figures";
 import { STATES, STATE_JA, getVoyage, stateRuns, unwrapTrack, yearTicks } from "@/lib/voyage";
 import type { State } from "@/lib/voyage";
 
@@ -18,6 +20,7 @@ export default function VoyagePage() {
   const track = unwrapTrack(v.days);
   const runs = stateRuns(v.days);
   const allTicks = yearTicks(v.days);
+  const months = getFigures().voyage_monthly;
   const t = v.totals;
 
   // --- 地図(正距円筒。経度はほどいてあるので太平洋横断が一本になる)
@@ -158,6 +161,13 @@ export default function VoyagePage() {
           ))}
         </svg>
       </div>
+
+      <h2>月ごとの内訳</h2>
+      <p>
+        同じ {t.days.toLocaleString("ja-JP")} 日を、月単位で積み直したもの。
+        {months.first} から {months.last} までの {months.months} か月。
+      </p>
+      <VoyageMonths fig={months} />
 
       <h2>事前登録した主張は落ちた</h2>
       <div className="note note--warn">

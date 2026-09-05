@@ -182,6 +182,13 @@ code, .mono {
 .note--warn { border-left-color: var(--land); }
 .note p { margin: 0.6rem 0; }
 
+/* 標準図(索引の頁密度・航海の月別内訳) */
+.density, .months { width: 100%; min-width: 30rem; height: auto; display: block; }
+.chapline { stroke: var(--hairline); stroke-width: 0.8; }
+.chaplabel { fill: var(--ink-3); font-size: 8px; font-family: ui-monospace, Menlo, Consolas, monospace; }
+.axis { stroke: var(--ink-3); stroke-width: 0.8; }
+.gratlabel2 { fill: var(--ink-3); font-size: 10px; font-family: ui-monospace, Menlo, Consolas, monospace; }
+
 /* 測って捨てた記録 */
 .rules { margin: 1.2rem 0; padding-left: 1.4rem; }
 .rules li { margin: 0.5rem 0; }

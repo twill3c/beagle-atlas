@@ -1,0 +1,2628 @@
+{
+  "schema": "beagle-atlas/figures@1",
+  "note": "標準的な集計であり、主張ではない。索引が指した頁は 1845 年の編者が選んだもので、本サイトが選んだものではない。",
+  "index_density": {
+    "page_from": 1,
+    "page_to": 506,
+    "total_refs_in_body": 1635,
+    "refs_outside_body": 0,
+    "max_refs_on_a_page": 16,
+    "pages_with_no_ref": 59,
+    "by_page": [
+      {
+        "page": 1,
+        "refs": 2
+      },
+      {
+        "page": 2,
+        "refs": 2
+      },
+      {
+        "page": 3,
+        "refs": 1
+      },
+      {
+        "page": 4,
+        "refs": 2
+      },
+      {
+        "page": 5,
+        "refs": 4
+      },
+      {
+        "page": 6,
+        "refs": 3
+      },
+      {
+        "page": 7,
+        "refs": 2
+      },
+      {
+        "page": 8,
+        "refs": 4
+      },
+      {
+        "page": 9,
+        "refs": 3
+      },
+      {
+        "page": 10,
+        "refs": 8
+      },
+      {
+        "page": 11,
+        "refs": 3
+      },
+      {
+        "page": 12,
+        "refs": 7
+      },
+      {
+        "page": 13,
+        "refs": 2
+      },
+      {
+        "page": 14,
+        "refs": 8
+      },
+      {
+        "page": 15,
+        "refs": 1
+      },
+      {
+        "page": 16,
+        "refs": 0
+      },
+      {
+        "page": 17,
+        "refs": 5
+      },
+      {
+        "page": 18,
+        "refs": 0
+      },
+      {
+        "page": 19,
+        "refs": 1
+      },
+      {
+        "page": 20,
+        "refs": 1
+      },
+      {
+        "page": 21,
+        "refs": 3
+      },
+      {
+        "page": 22,
+        "refs": 4
+      },
+      {
+        "page": 23,
+        "refs": 0
+      },
+      {
+        "page": 24,
+        "refs": 3
+      },
+      {
+        "page": 25,
+        "refs": 1
+      },
+      {
+        "page": 26,
+        "refs": 1
+      },
+      {
+        "page": 27,
+        "refs": 0
+      },
+      {
+        "page": 28,
+        "refs": 3
+      },
+      {
+        "page": 29,
+        "refs": 3
+      },
+      {
+        "page": 30,
+        "refs": 3
+      },
+      {
+        "page": 31,
+        "refs": 2
+      },
+      {
+        "page": 32,
+        "refs": 5
+      },
+      {
+        "page": 33,
+        "refs": 4
+      },
+      {
+        "page": 34,
+        "refs": 3
+      },
+      {
+        "page": 35,
+        "refs": 7
+      },
+      {
+        "page": 36,
+        "refs": 5
+      },
+      {
+        "page": 37,
+        "refs": 3
+      },
+      {
+        "page": 38,
+        "refs": 5
+      },
+      {
+        "page": 39,
+        "refs": 6
+      },
+      {
+        "page": 40,
+        "refs": 2
+      },
+      {
+        "page": 41,
+        "refs": 1
+      },
+      {
+        "page": 42,
+        "refs": 1
+      },
+      {
+        "page": 43,
+        "refs": 2
+      },
+      {
+        "page": 44,
+        "refs": 2
+      },
+      {
+        "page": 45,
+        "refs": 3
+      },
+      {
+        "page": 46,
+        "refs": 4
+      },
+      {
+        "page": 47,
+        "refs": 2
+      },
+      {
+        "page": 48,
+        "refs": 2
+      },
+      {
+        "page": 49,
+        "refs": 7
+      },
+      {
+        "page": 50,
+        "refs": 4
+      },
+      {
+        "page": 51,
+        "refs": 0
+      },
+      {
+        "page": 52,
+        "refs": 7
+      },
+      {
+        "page": 53,
+        "refs": 3
+      },
+      {
+        "page": 54,
+        "refs": 4
+      },
+      {
+        "page": 55,
+        "refs": 4
+      },
+      {
+        "page": 56,
+        "refs": 0
+      },
+      {
+        "page": 57,
+        "refs": 3
+      },
+      {
+        "page": 58,
+        "refs": 4
+      },
+      {
+        "page": 59,
+        "refs": 6
+      },
+      {
+        "page": 60,
+        "refs": 1
+      },
+      {
+        "page": 61,
+        "refs": 1
+      },
+      {
+        "page": 62,
+        "refs": 3
+      },
+      {
+        "page": 63,
+        "refs": 2
+      },
+      {
+        "page": 64,
+        "refs": 2
+      },
+      {
+        "page": 65,
+        "refs": 2
+      },
+      {
+        "page": 66,
+        "refs": 6
+      },
+      {
+        "page": 67,
+        "refs": 2
+      },
+      {
+        "page": 68,
+        "refs": 1
+      },
+      {
+        "page": 69,
+        "refs": 2
+      },
+      {
+        "page": 70,
+        "refs": 6
+      },
+      {
+        "page": 71,
+        "refs": 1
+      },
+      {
+        "page": 72,
+        "refs": 0
+      },
+      {
+        "page": 73,
+        "refs": 0
+      },
+      {
+        "page": 74,
+        "refs": 0
+      },
+      {
+        "page": 75,
+        "refs": 4
+      },
+      {
+        "page": 76,
+        "refs": 2
+      },
+      {
+        "page": 77,
+        "refs": 2
+      },
+      {
+        "page": 78,
+        "refs": 5
+      },
+      {
+        "page": 79,
+        "refs": 1
+      },
+      {
+        "page": 80,
+        "refs": 3
+      },
+      {
+        "page": 81,
+        "refs": 12
+      },
+      {
+        "page": 82,
+        "refs": 12
+      },
+      {
+        "page": 83,
+        "refs": 7
+      },
+      {
+        "page": 84,
+        "refs": 2
+      },
+      {
+        "page": 85,
+        "refs": 8
+      },
+      {
+        "page": 86,
+        "refs": 2
+      },
+      {
+        "page": 87,
+        "refs": 5
+      },
+      {
+        "page": 88,
+        "refs": 5
+      },
+      {
+        "page": 89,
+        "refs": 6
+      },
+      {
+        "page": 90,
+        "refs": 1
+      },
+      {
+        "page": 91,
+        "refs": 3
+      },
+      {
+        "page": 92,
+        "refs": 3
+      },
+      {
+        "page": 93,
+        "refs": 3
+      },
+      {
+        "page": 94,
+        "refs": 4
+      },
+      {
+        "page": 95,
+        "refs": 8
+      },
+      {
+        "page": 96,
+        "refs": 3
+      },
+      {
+        "page": 97,
+        "refs": 6
+      },
+      {
+        "page": 98,
+        "refs": 3
+      },
+      {
+        "page": 99,
+        "refs": 4
+      },
+      {
+        "page": 100,
+        "refs": 5
+      },
+      {
+        "page": 101,
+        "refs": 2
+      },
+      {
+        "page": 102,
+        "refs": 1
+      },
+      {
+        "page": 103,
+        "refs": 2
+      },
+      {
+        "page": 104,
+        "refs": 3
+      },
+      {
+        "page": 105,
+        "refs": 4
+      },
+      {
+        "page": 106,
+        "refs": 3
+      },
+      {
+        "page": 107,
+        "refs": 4
+      },
+      {
+        "page": 108,
+        "refs": 1
+      },
+      {
+        "page": 109,
+        "refs": 2
+      },
+      {
+        "page": 110,
+        "refs": 3
+      },
+      {
+        "page": 111,
+        "refs": 1
+      },
+      {
+        "page": 112,
+        "refs": 0
+      },
+      {
+        "page": 113,
+        "refs": 2
+      },
+      {
+        "page": 114,
+        "refs": 4
+      },
+      {
+        "page": 115,
+        "refs": 1
+      },
+      {
+        "page": 116,
+        "refs": 6
+      },
+      {
+        "page": 117,
+        "refs": 5
+      },
+      {
+        "page": 118,
+        "refs": 7
+      },
+      {
+        "page": 119,
+        "refs": 8
+      },
+      {
+        "page": 120,
+        "refs": 8
+      },
+      {
+        "page": 121,
+        "refs": 2
+      },
+      {
+        "page": 122,
+        "refs": 0
+      },
+      {
+        "page": 123,
+        "refs": 0
+      },
+      {
+        "page": 124,
+        "refs": 7
+      },
+      {
+        "page": 125,
+        "refs": 4
+      },
+      {
+        "page": 126,
+        "refs": 1
+      },
+      {
+        "page": 127,
+        "refs": 9
+      },
+      {
+        "page": 128,
+        "refs": 1
+      },
+      {
+        "page": 129,
+        "refs": 7
+      },
+      {
+        "page": 130,
+        "refs": 16
+      },
+      {
+        "page": 131,
+        "refs": 9
+      },
+      {
+        "page": 132,
+        "refs": 5
+      },
+      {
+        "page": 133,
+        "refs": 5
+      },
+      {
+        "page": 134,
+        "refs": 5
+      },
+      {
+        "page": 135,
+        "refs": 1
+      },
+      {
+        "page": 136,
+        "refs": 4
+      },
+      {
+        "page": 137,
+        "refs": 2
+      },
+      {
+        "page": 138,
+        "refs": 7
+      },
+      {
+        "page": 139,
+        "refs": 2
+      },
+      {
+        "page": 140,
+        "refs": 2
+      },
+      {
+        "page": 141,
+        "refs": 0
+      },
+      {
+        "page": 142,
+        "refs": 2
+      },
+      {
+        "page": 143,
+        "refs": 2
+      },
+      {
+        "page": 144,
+        "refs": 1
+      },
+      {
+        "page": 145,
+        "refs": 5
+      },
+      {
+        "page": 146,
+        "refs": 3
+      },
+      {
+        "page": 147,
+        "refs": 2
+      },
+      {
+        "page": 148,
+        "refs": 2
+      },
+      {
+        "page": 149,
+        "refs": 11
+      },
+      {
+        "page": 150,
+        "refs": 0
+      },
+      {
+        "page": 151,
+        "refs": 1
+      },
+      {
+        "page": 152,
+        "refs": 1
+      },
+      {
+        "page": 153,
+        "refs": 2
+      },
+      {
+        "page": 154,
+        "refs": 1
+      },
+      {
+        "page": 155,
+        "refs": 13
+      },
+      {
+        "page": 156,
+        "refs": 1
+      },
+      {
+        "page": 157,
+        "refs": 1
+      },
+      {
+        "page": 158,
+        "refs": 5
+      },
+      {
+        "page": 159,
+        "refs": 5
+      },
+      {
+        "page": 160,
+        "refs": 0
+      },
+      {
+        "page": 161,
+        "refs": 5
+      },
+      {
+        "page": 162,
+        "refs": 5
+      },
+      {
+        "page": 163,
+        "refs": 1
+      },
+      {
+        "page": 164,
+        "refs": 1
+      },
+      {
+        "page": 165,
+        "refs": 6
+      },
+      {
+        "page": 166,
+        "refs": 2
+      },
+      {
+        "page": 167,
+        "refs": 2
+      },
+      {
+        "page": 168,
+        "refs": 3
+      },
+      {
+        "page": 169,
+        "refs": 1
+      },
+      {
+        "page": 170,
+        "refs": 15
+      },
+      {
+        "page": 171,
+        "refs": 9
+      },
+      {
+        "page": 172,
+        "refs": 5
+      },
+      {
+        "page": 173,
+        "refs": 9
+      },
+      {
+        "page": 174,
+        "refs": 3
+      },
+      {
+        "page": 175,
+        "refs": 0
+      },
+      {
+        "page": 176,
+        "refs": 0
+      },
+      {
+        "page": 177,
+        "refs": 3
+      },
+      {
+        "page": 178,
+        "refs": 0
+      },
+      {
+        "page": 179,
+        "refs": 2
+      },
+      {
+        "page": 180,
+        "refs": 3
+      },
+      {
+        "page": 181,
+        "refs": 3
+      },
+      {
+        "page": 182,
+        "refs": 1
+      },
+      {
+        "page": 183,
+        "refs": 1
+      },
+      {
+        "page": 184,
+        "refs": 6
+      },
+      {
+        "page": 185,
+        "refs": 2
+      },
+      {
+        "page": 186,
+        "refs": 1
+      },
+      {
+        "page": 187,
+        "refs": 5
+      },
+      {
+        "page": 188,
+        "refs": 2
+      },
+      {
+        "page": 189,
+        "refs": 1
+      },
+      {
+        "page": 190,
+        "refs": 2
+      },
+      {
+        "page": 191,
+        "refs": 1
+      },
+      {
+        "page": 192,
+        "refs": 1
+      },
+      {
+        "page": 193,
+        "refs": 6
+      },
+      {
+        "page": 194,
+        "refs": 3
+      },
+      {
+        "page": 195,
+        "refs": 1
+      },
+      {
+        "page": 196,
+        "refs": 3
+      },
+      {
+        "page": 197,
+        "refs": 1
+      },
+      {
+        "page": 198,
+        "refs": 1
+      },
+      {
+        "page": 199,
+        "refs": 6
+      },
+      {
+        "page": 200,
+        "refs": 0
+      },
+      {
+        "page": 201,
+        "refs": 6
+      },
+      {
+        "page": 202,
+        "refs": 4
+      },
+      {
+        "page": 203,
+        "refs": 0
+      },
+      {
+        "page": 204,
+        "refs": 3
+      },
+      {
+        "page": 205,
+        "refs": 2
+      },
+      {
+        "page": 206,
+        "refs": 2
+      },
+      {
+        "page": 207,
+        "refs": 3
+      },
+      {
+        "page": 208,
+        "refs": 3
+      },
+      {
+        "page": 209,
+        "refs": 2
+      },
+      {
+        "page": 210,
+        "refs": 4
+      },
+      {
+        "page": 211,
+        "refs": 4
+      },
+      {
+        "page": 212,
+        "refs": 4
+      },
+      {
+        "page": 213,
+        "refs": 2
+      },
+      {
+        "page": 214,
+        "refs": 2
+      },
+      {
+        "page": 215,
+        "refs": 2
+      },
+      {
+        "page": 216,
+        "refs": 3
+      },
+      {
+        "page": 217,
+        "refs": 5
+      },
+      {
+        "page": 218,
+        "refs": 2
+      },
+      {
+        "page": 219,
+        "refs": 2
+      },
+      {
+        "page": 220,
+        "refs": 2
+      },
+      {
+        "page": 221,
+        "refs": 7
+      },
+      {
+        "page": 222,
+        "refs": 2
+      },
+      {
+        "page": 223,
+        "refs": 3
+      },
+      {
+        "page": 224,
+        "refs": 5
+      },
+      {
+        "page": 225,
+        "refs": 2
+      },
+      {
+        "page": 226,
+        "refs": 2
+      },
+      {
+        "page": 227,
+        "refs": 2
+      },
+      {
+        "page": 228,
+        "refs": 2
+      },
+      {
+        "page": 229,
+        "refs": 2
+      },
+      {
+        "page": 230,
+        "refs": 2
+      },
+      {
+        "page": 231,
+        "refs": 7
+      },
+      {
+        "page": 232,
+        "refs": 2
+      },
+      {
+        "page": 233,
+        "refs": 7
+      },
+      {
+        "page": 234,
+        "refs": 4
+      },
+      {
+        "page": 235,
+        "refs": 4
+      },
+      {
+        "page": 236,
+        "refs": 6
+      },
+      {
+        "page": 237,
+        "refs": 4
+      },
+      {
+        "page": 238,
+        "refs": 5
+      },
+      {
+        "page": 239,
+        "refs": 8
+      },
+      {
+        "page": 240,
+        "refs": 2
+      },
+      {
+        "page": 241,
+        "refs": 4
+      },
+      {
+        "page": 242,
+        "refs": 5
+      },
+      {
+        "page": 243,
+        "refs": 7
+      },
+      {
+        "page": 244,
+        "refs": 8
+      },
+      {
+        "page": 245,
+        "refs": 2
+      },
+      {
+        "page": 246,
+        "refs": 6
+      },
+      {
+        "page": 247,
+        "refs": 6
+      },
+      {
+        "page": 248,
+        "refs": 11
+      },
+      {
+        "page": 249,
+        "refs": 5
+      },
+      {
+        "page": 250,
+        "refs": 4
+      },
+      {
+        "page": 251,
+        "refs": 3
+      },
+      {
+        "page": 252,
+        "refs": 2
+      },
+      {
+        "page": 253,
+        "refs": 1
+      },
+      {
+        "page": 254,
+        "refs": 6
+      },
+      {
+        "page": 255,
+        "refs": 1
+      },
+      {
+        "page": 256,
+        "refs": 2
+      },
+      {
+        "page": 257,
+        "refs": 2
+      },
+      {
+        "page": 258,
+        "refs": 2
+      },
+      {
+        "page": 259,
+        "refs": 1
+      },
+      {
+        "page": 260,
+        "refs": 2
+      },
+      {
+        "page": 261,
+        "refs": 2
+      },
+      {
+        "page": 262,
+        "refs": 4
+      },
+      {
+        "page": 263,
+        "refs": 3
+      },
+      {
+        "page": 264,
+        "refs": 1
+      },
+      {
+        "page": 265,
+        "refs": 5
+      },
+      {
+        "page": 266,
+        "refs": 3
+      },
+      {
+        "page": 267,
+        "refs": 5
+      },
+      {
+        "page": 268,
+        "refs": 0
+      },
+      {
+        "page": 269,
+        "refs": 2
+      },
+      {
+        "page": 270,
+        "refs": 3
+      },
+      {
+        "page": 271,
+        "refs": 3
+      },
+      {
+        "page": 272,
+        "refs": 0
+      },
+      {
+        "page": 273,
+        "refs": 4
+      },
+      {
+        "page": 274,
+        "refs": 2
+      },
+      {
+        "page": 275,
+        "refs": 2
+      },
+      {
+        "page": 276,
+        "refs": 2
+      },
+      {
+        "page": 277,
+        "refs": 0
+      },
+      {
+        "page": 278,
+        "refs": 4
+      },
+      {
+        "page": 279,
+        "refs": 0
+      },
+      {
+        "page": 280,
+        "refs": 3
+      },
+      {
+        "page": 281,
+        "refs": 6
+      },
+      {
+        "page": 282,
+        "refs": 1
+      },
+      {
+        "page": 283,
+        "refs": 1
+      },
+      {
+        "page": 284,
+        "refs": 4
+      },
+      {
+        "page": 285,
+        "refs": 3
+      },
+      {
+        "page": 286,
+        "refs": 3
+      },
+      {
+        "page": 287,
+        "refs": 5
+      },
+      {
+        "page": 288,
+        "refs": 6
+      },
+      {
+        "page": 289,
+        "refs": 5
+      },
+      {
+        "page": 290,
+        "refs": 1
+      },
+      {
+        "page": 291,
+        "refs": 6
+      },
+      {
+        "page": 292,
+        "refs": 1
+      },
+      {
+        "page": 293,
+        "refs": 1
+      },
+      {
+        "page": 294,
+        "refs": 2
+      },
+      {
+        "page": 295,
+        "refs": 1
+      },
+      {
+        "page": 296,
+        "refs": 0
+      },
+      {
+        "page": 297,
+        "refs": 4
+      },
+      {
+        "page": 298,
+        "refs": 2
+      },
+      {
+        "page": 299,
+        "refs": 2
+      },
+      {
+        "page": 300,
+        "refs": 0
+      },
+      {
+        "page": 301,
+        "refs": 4
+      },
+      {
+        "page": 302,
+        "refs": 5
+      },
+      {
+        "page": 303,
+        "refs": 1
+      },
+      {
+        "page": 304,
+        "refs": 1
+      },
+      {
+        "page": 305,
+        "refs": 2
+      },
+      {
+        "page": 306,
+        "refs": 2
+      },
+      {
+        "page": 307,
+        "refs": 3
+      },
+      {
+        "page": 308,
+        "refs": 2
+      },
+      {
+        "page": 309,
+        "refs": 1
+      },
+      {
+        "page": 310,
+        "refs": 6
+      },
+      {
+        "page": 311,
+        "refs": 2
+      },
+      {
+        "page": 312,
+        "refs": 2
+      },
+      {
+        "page": 313,
+        "refs": 1
+      },
+      {
+        "page": 314,
+        "refs": 3
+      },
+      {
+        "page": 315,
+        "refs": 7
+      },
+      {
+        "page": 316,
+        "refs": 5
+      },
+      {
+        "page": 317,
+        "refs": 1
+      },
+      {
+        "page": 318,
+        "refs": 4
+      },
+      {
+        "page": 319,
+        "refs": 7
+      },
+      {
+        "page": 320,
+        "refs": 2
+      },
+      {
+        "page": 321,
+        "refs": 4
+      },
+      {
+        "page": 322,
+        "refs": 6
+      },
+      {
+        "page": 323,
+        "refs": 3
+      },
+      {
+        "page": 324,
+        "refs": 3
+      },
+      {
+        "page": 325,
+        "refs": 8
+      },
+      {
+        "page": 326,
+        "refs": 6
+      },
+      {
+        "page": 327,
+        "refs": 4
+      },
+      {
+        "page": 328,
+        "refs": 1
+      },
+      {
+        "page": 329,
+        "refs": 5
+      },
+      {
+        "page": 330,
+        "refs": 4
+      },
+      {
+        "page": 331,
+        "refs": 2
+      },
+      {
+        "page": 332,
+        "refs": 4
+      },
+      {
+        "page": 333,
+        "refs": 3
+      },
+      {
+        "page": 334,
+        "refs": 4
+      },
+      {
+        "page": 335,
+        "refs": 2
+      },
+      {
+        "page": 336,
+        "refs": 0
+      },
+      {
+        "page": 337,
+        "refs": 1
+      },
+      {
+        "page": 338,
+        "refs": 3
+      },
+      {
+        "page": 339,
+        "refs": 1
+      },
+      {
+        "page": 340,
+        "refs": 2
+      },
+      {
+        "page": 341,
+        "refs": 0
+      },
+      {
+        "page": 342,
+        "refs": 2
+      },
+      {
+        "page": 343,
+        "refs": 3
+      },
+      {
+        "page": 344,
+        "refs": 7
+      },
+      {
+        "page": 345,
+        "refs": 0
+      },
+      {
+        "page": 346,
+        "refs": 3
+      },
+      {
+        "page": 347,
+        "refs": 4
+      },
+      {
+        "page": 348,
+        "refs": 2
+      },
+      {
+        "page": 349,
+        "refs": 2
+      },
+      {
+        "page": 350,
+        "refs": 2
+      },
+      {
+        "page": 351,
+        "refs": 4
+      },
+      {
+        "page": 352,
+        "refs": 1
+      },
+      {
+        "page": 353,
+        "refs": 6
+      },
+      {
+        "page": 354,
+        "refs": 1
+      },
+      {
+        "page": 355,
+        "refs": 3
+      },
+      {
+        "page": 356,
+        "refs": 8
+      },
+      {
+        "page": 357,
+        "refs": 6
+      },
+      {
+        "page": 358,
+        "refs": 8
+      },
+      {
+        "page": 359,
+        "refs": 1
+      },
+      {
+        "page": 360,
+        "refs": 4
+      },
+      {
+        "page": 361,
+        "refs": 5
+      },
+      {
+        "page": 362,
+        "refs": 6
+      },
+      {
+        "page": 363,
+        "refs": 4
+      },
+      {
+        "page": 364,
+        "refs": 8
+      },
+      {
+        "page": 365,
+        "refs": 9
+      },
+      {
+        "page": 366,
+        "refs": 4
+      },
+      {
+        "page": 367,
+        "refs": 2
+      },
+      {
+        "page": 368,
+        "refs": 6
+      },
+      {
+        "page": 369,
+        "refs": 15
+      },
+      {
+        "page": 370,
+        "refs": 7
+      },
+      {
+        "page": 371,
+        "refs": 5
+      },
+      {
+        "page": 372,
+        "refs": 1
+      },
+      {
+        "page": 373,
+        "refs": 4
+      },
+      {
+        "page": 374,
+        "refs": 5
+      },
+      {
+        "page": 375,
+        "refs": 2
+      },
+      {
+        "page": 376,
+        "refs": 2
+      },
+      {
+        "page": 377,
+        "refs": 8
+      },
+      {
+        "page": 378,
+        "refs": 7
+      },
+      {
+        "page": 379,
+        "refs": 4
+      },
+      {
+        "page": 380,
+        "refs": 1
+      },
+      {
+        "page": 381,
+        "refs": 10
+      },
+      {
+        "page": 382,
+        "refs": 6
+      },
+      {
+        "page": 383,
+        "refs": 1
+      },
+      {
+        "page": 384,
+        "refs": 0
+      },
+      {
+        "page": 385,
+        "refs": 3
+      },
+      {
+        "page": 386,
+        "refs": 1
+      },
+      {
+        "page": 387,
+        "refs": 0
+      },
+      {
+        "page": 388,
+        "refs": 0
+      },
+      {
+        "page": 389,
+        "refs": 0
+      },
+      {
+        "page": 390,
+        "refs": 2
+      },
+      {
+        "page": 391,
+        "refs": 1
+      },
+      {
+        "page": 392,
+        "refs": 12
+      },
+      {
+        "page": 393,
+        "refs": 4
+      },
+      {
+        "page": 394,
+        "refs": 11
+      },
+      {
+        "page": 395,
+        "refs": 4
+      },
+      {
+        "page": 396,
+        "refs": 0
+      },
+      {
+        "page": 397,
+        "refs": 0
+      },
+      {
+        "page": 398,
+        "refs": 5
+      },
+      {
+        "page": 399,
+        "refs": 5
+      },
+      {
+        "page": 400,
+        "refs": 1
+      },
+      {
+        "page": 401,
+        "refs": 0
+      },
+      {
+        "page": 402,
+        "refs": 6
+      },
+      {
+        "page": 403,
+        "refs": 3
+      },
+      {
+        "page": 404,
+        "refs": 1
+      },
+      {
+        "page": 405,
+        "refs": 0
+      },
+      {
+        "page": 406,
+        "refs": 2
+      },
+      {
+        "page": 407,
+        "refs": 0
+      },
+      {
+        "page": 408,
+        "refs": 1
+      },
+      {
+        "page": 409,
+        "refs": 1
+      },
+      {
+        "page": 410,
+        "refs": 0
+      },
+      {
+        "page": 411,
+        "refs": 1
+      },
+      {
+        "page": 412,
+        "refs": 2
+      },
+      {
+        "page": 413,
+        "refs": 0
+      },
+      {
+        "page": 414,
+        "refs": 0
+      },
+      {
+        "page": 415,
+        "refs": 0
+      },
+      {
+        "page": 416,
+        "refs": 0
+      },
+      {
+        "page": 417,
+        "refs": 3
+      },
+      {
+        "page": 418,
+        "refs": 1
+      },
+      {
+        "page": 419,
+        "refs": 0
+      },
+      {
+        "page": 420,
+        "refs": 1
+      },
+      {
+        "page": 421,
+        "refs": 1
+      },
+      {
+        "page": 422,
+        "refs": 0
+      },
+      {
+        "page": 423,
+        "refs": 1
+      },
+      {
+        "page": 424,
+        "refs": 0
+      },
+      {
+        "page": 425,
+        "refs": 1
+      },
+      {
+        "page": 426,
+        "refs": 1
+      },
+      {
+        "page": 427,
+        "refs": 5
+      },
+      {
+        "page": 428,
+        "refs": 3
+      },
+      {
+        "page": 429,
+        "refs": 0
+      },
+      {
+        "page": 430,
+        "refs": 0
+      },
+      {
+        "page": 431,
+        "refs": 2
+      },
+      {
+        "page": 432,
+        "refs": 0
+      },
+      {
+        "page": 433,
+        "refs": 2
+      },
+      {
+        "page": 434,
+        "refs": 3
+      },
+      {
+        "page": 435,
+        "refs": 9
+      },
+      {
+        "page": 436,
+        "refs": 2
+      },
+      {
+        "page": 437,
+        "refs": 4
+      },
+      {
+        "page": 438,
+        "refs": 2
+      },
+      {
+        "page": 439,
+        "refs": 2
+      },
+      {
+        "page": 440,
+        "refs": 1
+      },
+      {
+        "page": 441,
+        "refs": 3
+      },
+      {
+        "page": 442,
+        "refs": 4
+      },
+      {
+        "page": 443,
+        "refs": 2
+      },
+      {
+        "page": 444,
+        "refs": 1
+      },
+      {
+        "page": 445,
+        "refs": 2
+      },
+      {
+        "page": 446,
+        "refs": 3
+      },
+      {
+        "page": 447,
+        "refs": 2
+      },
+      {
+        "page": 448,
+        "refs": 11
+      },
+      {
+        "page": 449,
+        "refs": 2
+      },
+      {
+        "page": 450,
+        "refs": 4
+      },
+      {
+        "page": 451,
+        "refs": 0
+      },
+      {
+        "page": 452,
+        "refs": 2
+      },
+      {
+        "page": 453,
+        "refs": 2
+      },
+      {
+        "page": 454,
+        "refs": 9
+      },
+      {
+        "page": 455,
+        "refs": 1
+      },
+      {
+        "page": 456,
+        "refs": 10
+      },
+      {
+        "page": 457,
+        "refs": 3
+      },
+      {
+        "page": 458,
+        "refs": 3
+      },
+      {
+        "page": 459,
+        "refs": 2
+      },
+      {
+        "page": 460,
+        "refs": 3
+      },
+      {
+        "page": 461,
+        "refs": 6
+      },
+      {
+        "page": 462,
+        "refs": 3
+      },
+      {
+        "page": 463,
+        "refs": 2
+      },
+      {
+        "page": 464,
+        "refs": 8
+      },
+      {
+        "page": 465,
+        "refs": 10
+      },
+      {
+        "page": 466,
+        "refs": 4
+      },
+      {
+        "page": 467,
+        "refs": 6
+      },
+      {
+        "page": 468,
+        "refs": 4
+      },
+      {
+        "page": 469,
+        "refs": 8
+      },
+      {
+        "page": 470,
+        "refs": 4
+      },
+      {
+        "page": 471,
+        "refs": 5
+      },
+      {
+        "page": 472,
+        "refs": 6
+      },
+      {
+        "page": 473,
+        "refs": 4
+      },
+      {
+        "page": 474,
+        "refs": 4
+      },
+      {
+        "page": 475,
+        "refs": 10
+      },
+      {
+        "page": 476,
+        "refs": 8
+      },
+      {
+        "page": 477,
+        "refs": 4
+      },
+      {
+        "page": 478,
+        "refs": 6
+      },
+      {
+        "page": 479,
+        "refs": 5
+      },
+      {
+        "page": 480,
+        "refs": 6
+      },
+      {
+        "page": 481,
+        "refs": 5
+      },
+      {
+        "page": 482,
+        "refs": 3
+      },
+      {
+        "page": 483,
+        "refs": 1
+      },
+      {
+        "page": 484,
+        "refs": 1
+      },
+      {
+        "page": 485,
+        "refs": 1
+      },
+      {
+        "page": 486,
+        "refs": 1
+      },
+      {
+        "page": 487,
+        "refs": 2
+      },
+      {
+        "page": 488,
+        "refs": 3
+      },
+      {
+        "page": 489,
+        "refs": 3
+      },
+      {
+        "page": 490,
+        "refs": 7
+      },
+      {
+        "page": 491,
+        "refs": 1
+      },
+      {
+        "page": 492,
+        "refs": 2
+      },
+      {
+        "page": 493,
+        "refs": 4
+      },
+      {
+        "page": 494,
+        "refs": 3
+      },
+      {
+        "page": 495,
+        "refs": 2
+      },
+      {
+        "page": 496,
+        "refs": 0
+      },
+      {
+        "page": 497,
+        "refs": 0
+      },
+      {
+        "page": 498,
+        "refs": 5
+      },
+      {
+        "page": 499,
+        "refs": 1
+      },
+      {
+        "page": 500,
+        "refs": 0
+      },
+      {
+        "page": 501,
+        "refs": 0
+      },
+      {
+        "page": 502,
+        "refs": 0
+      },
+      {
+        "page": 503,
+        "refs": 0
+      },
+      {
+        "page": 504,
+        "refs": 0
+      },
+      {
+        "page": 505,
+        "refs": 0
+      },
+      {
+        "page": 506,
+        "refs": 0
+      }
+    ],
+    "by_chapter": [
+      {
+        "chapter": 1,
+        "page_from": 1,
+        "page_to": 18,
+        "pages": 18,
+        "refs": 57,
+        "refs_per_page": 3.17
+      },
+      {
+        "chapter": 2,
+        "page_from": 19,
+        "page_to": 38,
+        "pages": 20,
+        "refs": 57,
+        "refs_per_page": 2.85
+      },
+      {
+        "chapter": 3,
+        "page_from": 39,
+        "page_to": 62,
+        "pages": 24,
+        "refs": 72,
+        "refs_per_page": 3.0
+      },
+      {
+        "chapter": 4,
+        "page_from": 63,
+        "page_to": 80,
+        "pages": 18,
+        "refs": 41,
+        "refs_per_page": 2.28
+      },
+      {
+        "chapter": 5,
+        "page_from": 81,
+        "page_to": 105,
+        "pages": 25,
+        "refs": 114,
+        "refs_per_page": 4.56
+      },
+      {
+        "chapter": 6,
+        "page_from": 106,
+        "page_to": 122,
+        "pages": 17,
+        "refs": 57,
+        "refs_per_page": 3.35
+      },
+      {
+        "chapter": 7,
+        "page_from": 123,
+        "page_to": 141,
+        "pages": 19,
+        "refs": 87,
+        "refs_per_page": 4.58
+      },
+      {
+        "chapter": 8,
+        "page_from": 142,
+        "page_to": 176,
+        "pages": 35,
+        "refs": 125,
+        "refs_per_page": 3.57
+      },
+      {
+        "chapter": 9,
+        "page_from": 177,
+        "page_to": 203,
+        "pages": 27,
+        "refs": 65,
+        "refs_per_page": 2.41
+      },
+      {
+        "chapter": 10,
+        "page_from": 204,
+        "page_to": 230,
+        "pages": 27,
+        "refs": 76,
+        "refs_per_page": 2.81
+      },
+      {
+        "chapter": 11,
+        "page_from": 231,
+        "page_to": 251,
+        "pages": 21,
+        "refs": 110,
+        "refs_per_page": 5.24
+      },
+      {
+        "chapter": 12,
+        "page_from": 252,
+        "page_to": 272,
+        "pages": 21,
+        "refs": 50,
+        "refs_per_page": 2.38
+      },
+      {
+        "chapter": 13,
+        "page_from": 273,
+        "page_to": 290,
+        "pages": 18,
+        "refs": 52,
+        "refs_per_page": 2.89
+      },
+      {
+        "chapter": 14,
+        "page_from": 291,
+        "page_to": 312,
+        "pages": 22,
+        "refs": 50,
+        "refs_per_page": 2.27
+      },
+      {
+        "chapter": 15,
+        "page_from": 313,
+        "page_to": 336,
+        "pages": 24,
+        "refs": 89,
+        "refs_per_page": 3.71
+      },
+      {
+        "chapter": 16,
+        "page_from": 337,
+        "page_to": 371,
+        "pages": 35,
+        "refs": 145,
+        "refs_per_page": 4.14
+      },
+      {
+        "chapter": 17,
+        "page_from": 372,
+        "page_to": 401,
+        "pages": 30,
+        "refs": 100,
+        "refs_per_page": 3.33
+      },
+      {
+        "chapter": 18,
+        "page_from": 402,
+        "page_to": 430,
+        "pages": 29,
+        "refs": 34,
+        "refs_per_page": 1.17
+      },
+      {
+        "chapter": 19,
+        "page_from": 431,
+        "page_to": 451,
+        "pages": 21,
+        "refs": 61,
+        "refs_per_page": 2.9
+      },
+      {
+        "chapter": 20,
+        "page_from": 452,
+        "page_to": 482,
+        "pages": 31,
+        "refs": 156,
+        "refs_per_page": 5.03
+      },
+      {
+        "chapter": 21,
+        "page_from": 483,
+        "page_to": 506,
+        "pages": 24,
+        "refs": 37,
+        "refs_per_page": 1.54
+      }
+    ]
+  },
+  "voyage_monthly": {
+    "months": 59,
+    "first": "1831-12",
+    "last": "1836-10",
+    "rows": [
+      {
+        "month": "1831-12",
+        "Sea": 4,
+        "Harbour": 0,
+        "Land": 0,
+        "days": 4
+      },
+      {
+        "month": "1832-01",
+        "Sea": 15,
+        "Harbour": 16,
+        "Land": 0,
+        "days": 31
+      },
+      {
+        "month": "1832-02",
+        "Sea": 19,
+        "Harbour": 10,
+        "Land": 0,
+        "days": 29
+      },
+      {
+        "month": "1832-03",
+        "Sea": 10,
+        "Harbour": 20,
+        "Land": 1,
+        "days": 31
+      },
+      {
+        "month": "1832-04",
+        "Sea": 3,
+        "Harbour": 5,
+        "Land": 22,
+        "days": 30
+      },
+      {
+        "month": "1832-05",
+        "Sea": 0,
+        "Harbour": 0,
+        "Land": 31,
+        "days": 31
+      },
+      {
+        "month": "1832-06",
+        "Sea": 0,
+        "Harbour": 3,
+        "Land": 27,
+        "days": 30
+      },
+      {
+        "month": "1832-07",
+        "Sea": 21,
+        "Harbour": 10,
+        "Land": 0,
+        "days": 31
+      },
+      {
+        "month": "1832-08",
+        "Sea": 14,
+        "Harbour": 17,
+        "Land": 0,
+        "days": 31
+      },
+      {
+        "month": "1832-09",
+        "Sea": 5,
+        "Harbour": 25,
+        "Land": 0,
+        "days": 30
+      },
+      {
+        "month": "1832-10",
+        "Sea": 9,
+        "Harbour": 19,
+        "Land": 3,
+        "days": 31
+      },
+      {
+        "month": "1832-11",
+        "Sea": 9,
+        "Harbour": 21,
+        "Land": 0,
+        "days": 30
+      },
+      {
+        "month": "1832-12",
+        "Sea": 17,
+        "Harbour": 14,
+        "Land": 0,
+        "days": 31
+      },
+      {
+        "month": "1833-01",
+        "Sea": 15,
+        "Harbour": 5,
+        "Land": 11,
+        "days": 31
+      },
+      {
+        "month": "1833-02",
+        "Sea": 3,
+        "Harbour": 19,
+        "Land": 6,
+        "days": 28
+      },
+      {
+        "month": "1833-03",
+        "Sea": 0,
+        "Harbour": 31,
+        "Land": 0,
+        "days": 31
+      },
+      {
+        "month": "1833-04",
+        "Sea": 20,
+        "Harbour": 8,
+        "Land": 2,
+        "days": 30
+      },
+      {
+        "month": "1833-05",
+        "Sea": 0,
+        "Harbour": 0,
+        "Land": 31,
+        "days": 31
+      },
+      {
+        "month": "1833-06",
+        "Sea": 0,
+        "Harbour": 2,
+        "Land": 28,
+        "days": 30
+      },
+      {
+        "month": "1833-07",
+        "Sea": 12,
+        "Harbour": 19,
+        "Land": 0,
+        "days": 31
+      },
+      {
+        "month": "1833-08",
+        "Sea": 2,
+        "Harbour": 3,
+        "Land": 26,
+        "days": 31
+      },
+      {
+        "month": "1833-09",
+        "Sea": 0,
+        "Harbour": 0,
+        "Land": 30,
+        "days": 30
+      },
+      {
+        "month": "1833-10",
+        "Sea": 0,
+        "Harbour": 0,
+        "Land": 31,
+        "days": 31
+      },
+      {
+        "month": "1833-11",
+        "Sea": 2,
+        "Harbour": 1,
+        "Land": 27,
+        "days": 30
+      },
+      {
+        "month": "1833-12",
+        "Sea": 17,
+        "Harbour": 8,
+        "Land": 6,
+        "days": 31
+      },
+      {
+        "month": "1834-01",
+        "Sea": 17,
+        "Harbour": 14,
+        "Land": 0,
+        "days": 31
+      },
+      {
+        "month": "1834-02",
+        "Sea": 17,
+        "Harbour": 11,
+        "Land": 0,
+        "days": 28
+      },
+      {
+        "month": "1834-03",
+        "Sea": 6,
+        "Harbour": 22,
+        "Land": 3,
+        "days": 31
+      },
+      {
+        "month": "1834-04",
+        "Sea": 6,
+        "Harbour": 9,
+        "Land": 15,
+        "days": 30
+      },
+      {
+        "month": "1834-05",
+        "Sea": 20,
+        "Harbour": 4,
+        "Land": 7,
+        "days": 31
+      },
+      {
+        "month": "1834-06",
+        "Sea": 20,
+        "Harbour": 9,
+        "Land": 1,
+        "days": 30
+      },
+      {
+        "month": "1834-07",
+        "Sea": 10,
+        "Harbour": 19,
+        "Land": 2,
+        "days": 31
+      },
+      {
+        "month": "1834-08",
+        "Sea": 0,
+        "Harbour": 1,
+        "Land": 30,
+        "days": 31
+      },
+      {
+        "month": "1834-09",
+        "Sea": 0,
+        "Harbour": 0,
+        "Land": 30,
+        "days": 30
+      },
+      {
+        "month": "1834-10",
+        "Sea": 0,
+        "Harbour": 5,
+        "Land": 26,
+        "days": 31
+      },
+      {
+        "month": "1834-11",
+        "Sea": 11,
+        "Harbour": 12,
+        "Land": 7,
+        "days": 30
+      },
+      {
+        "month": "1834-12",
+        "Sea": 6,
+        "Harbour": 19,
+        "Land": 6,
+        "days": 31
+      },
+      {
+        "month": "1835-01",
+        "Sea": 5,
+        "Harbour": 20,
+        "Land": 6,
+        "days": 31
+      },
+      {
+        "month": "1835-02",
+        "Sea": 11,
+        "Harbour": 12,
+        "Land": 5,
+        "days": 28
+      },
+      {
+        "month": "1835-03",
+        "Sea": 7,
+        "Harbour": 4,
+        "Land": 20,
+        "days": 31
+      },
+      {
+        "month": "1835-04",
+        "Sea": 0,
+        "Harbour": 0,
+        "Land": 30,
+        "days": 30
+      },
+      {
+        "month": "1835-05",
+        "Sea": 0,
+        "Harbour": 1,
+        "Land": 30,
+        "days": 31
+      },
+      {
+        "month": "1835-06",
+        "Sea": 0,
+        "Harbour": 0,
+        "Land": 30,
+        "days": 30
+      },
+      {
+        "month": "1835-07",
+        "Sea": 11,
+        "Harbour": 12,
+        "Land": 8,
+        "days": 31
+      },
+      {
+        "month": "1835-08",
+        "Sea": 0,
+        "Harbour": 29,
+        "Land": 2,
+        "days": 31
+      },
+      {
+        "month": "1835-09",
+        "Sea": 11,
+        "Harbour": 18,
+        "Land": 1,
+        "days": 30
+      },
+      {
+        "month": "1835-10",
+        "Sea": 19,
+        "Harbour": 3,
+        "Land": 9,
+        "days": 31
+      },
+      {
+        "month": "1835-11",
+        "Sea": 19,
+        "Harbour": 7,
+        "Land": 3,
+        "days": 29
+      },
+      {
+        "month": "1835-12",
+        "Sea": 22,
+        "Harbour": 8,
+        "Land": 1,
+        "days": 31
+      },
+      {
+        "month": "1836-01",
+        "Sea": 13,
+        "Harbour": 7,
+        "Land": 11,
+        "days": 31
+      },
+      {
+        "month": "1836-02",
+        "Sea": 17,
+        "Harbour": 12,
+        "Land": 0,
+        "days": 29
+      },
+      {
+        "month": "1836-03",
+        "Sea": 23,
+        "Harbour": 8,
+        "Land": 0,
+        "days": 31
+      },
+      {
+        "month": "1836-04",
+        "Sea": 17,
+        "Harbour": 13,
+        "Land": 0,
+        "days": 30
+      },
+      {
+        "month": "1836-05",
+        "Sea": 22,
+        "Harbour": 7,
+        "Land": 2,
+        "days": 31
+      },
+      {
+        "month": "1836-06",
+        "Sea": 13,
+        "Harbour": 2,
+        "Land": 15,
+        "days": 30
+      },
+      {
+        "month": "1836-07",
+        "Sea": 21,
+        "Harbour": 5,
+        "Land": 5,
+        "days": 31
+      },
+      {
+        "month": "1836-08",
+        "Sea": 20,
+        "Harbour": 7,
+        "Land": 4,
+        "days": 31
+      },
+      {
+        "month": "1836-09",
+        "Sea": 22,
+        "Harbour": 8,
+        "Land": 0,
+        "days": 30
+      },
+      {
+        "month": "1836-10",
+        "Sea": 1,
+        "Harbour": 0,
+        "Land": 1,
+        "days": 2
+      }
+    ]
+  }
+}

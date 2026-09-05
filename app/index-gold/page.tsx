@@ -1,5 +1,7 @@
 import { IndexBrowser } from "@/components/IndexBrowser";
+import { IndexDensity } from "@/components/IndexDensity";
 import { getIndexGold } from "@/lib/data";
+import { getFigures } from "@/lib/figures";
 
 export const metadata = {
   title: "1845 年版の索引 — ビーグル・アトラス",
@@ -9,6 +11,7 @@ export const metadata = {
 
 export default function IndexGoldPage() {
   const g = getIndexGold();
+  const fig = getFigures().index_density;
   const [lo, hi] = g.checks.book_page_bounds;
 
   return (
@@ -78,6 +81,43 @@ export default function IndexGoldPage() {
         全 {g.counts.page_refs_expanded.toLocaleString("ja-JP")} 件の頁参照は、
         すべて本の頁範囲 {lo}–{hi} に収まっている。
       </p>
+
+      <h2>索引が指した頁</h2>
+      <p>
+        1845 年の編者が、本のどの頁を何回指したか。
+        <strong>選んだのは当時の編者であって、本サイトではない。</strong>
+        {fig.total_refs_in_body.toLocaleString("ja-JP")} 件の参照が本文
+        {fig.page_from}–{fig.page_to} 頁に収まり、本文の外を指すものは
+        {fig.refs_outside_body} 件だった。1 頁あたり最大 {fig.max_refs_on_a_page} 件、
+        一度も指されなかった頁は {fig.pages_with_no_ref} 頁ある。
+      </p>
+      <IndexDensity fig={fig} />
+
+      <div className="scroll">
+        <table>
+          <caption>章ごとの索引参照(頁あたり)</caption>
+          <thead>
+            <tr>
+              <th className="num">章</th>
+              <th className="num">頁</th>
+              <th className="num">頁数</th>
+              <th className="num">参照</th>
+              <th className="num">頁あたり</th>
+            </tr>
+          </thead>
+          <tbody>
+            {fig.by_chapter.map((c) => (
+              <tr key={c.chapter}>
+                <td className="num">{c.chapter}</td>
+                <td className="num">{c.page_from}–{c.page_to}</td>
+                <td className="num">{c.pages}</td>
+                <td className="num">{c.refs}</td>
+                <td className="num">{c.refs_per_page.toFixed(2)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
       <h2>索引</h2>
       <p className="lede">
