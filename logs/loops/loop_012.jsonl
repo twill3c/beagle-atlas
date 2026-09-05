@@ -1,0 +1,1 @@
+{"v": "1.2", "ts": "2026-09-05T20:09:46+09:00", "project": "beagle-atlas", "loop_id": "loop_012", "event": "loop_start", "data": {"goal": "読み画面と訳の検査を作り、第 1 章 37 段落を訳して充填率を出す", "spec_refs": ["F-07", "G-12"], "scaffold_version": "v1.30.0", "agent": "claude-code", "model": "claude-opus-5[1m]"}}

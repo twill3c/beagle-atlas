@@ -8,6 +8,7 @@ export function SiteNav() {
           <Link href="/">ビーグル・アトラス</Link>
         </span>
         <span className="site-nav__links">
+          <Link href="/read/">読む</Link>
           <Link href="/voyage/">航路と年表</Link>
           <Link href="/editions/">二つの版</Link>
           <Link href="/discarded/">測って、捨てた</Link>

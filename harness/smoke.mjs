@@ -8,7 +8,7 @@ import { chromium } from "playwright";
 
 const ROOT = new URL("../out/", import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1");
 const WIDTHS = [320, 390, 768, 1280];
-const PAGES = ["/", "/index-gold/", "/voyage/", "/editions/", "/discarded/"];
+const PAGES = ["/", "/index-gold/", "/voyage/", "/editions/", "/discarded/", "/read/"];
 const MIME = {
   ".html": "text/html; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
