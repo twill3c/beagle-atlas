@@ -1,4 +1,5 @@
 import { VoyageMonths } from "@/components/VoyageMonths";
+import { WeatherChart, getWeather } from "@/components/WeatherChart";
 import { getFigures } from "@/lib/figures";
 import { STATES, STATE_JA, getVoyage, stateRuns, unwrapTrack, yearTicks } from "@/lib/voyage";
 import type { State } from "@/lib/voyage";
@@ -21,6 +22,7 @@ export default function VoyagePage() {
   const runs = stateRuns(v.days);
   const allTicks = yearTicks(v.days);
   const months = getFigures().voyage_monthly;
+  const weather = getWeather();
   const t = v.totals;
 
   // --- 地図(正距円筒。経度はほどいてあるので太平洋横断が一本になる)
@@ -170,6 +172,24 @@ export default function VoyagePage() {
         {months.first} から {months.last} までの {months.months} か月。
       </p>
       <VoyageMonths fig={months} />
+
+      <h2>気温と水温</h2>
+      <p>
+        同じ航海を、船が毎日つけていた気象日誌の側から見る。出典は
+        FitzRoy『Narrative』第 2 巻の Appendix(1839 年刊)で、
+        日・時・風・気圧・気温・水温・地点の欄を持つ月ごとの表が並んでいる。
+        気象表 {weather.totals.meteorological_tables} 個のうち
+        {weather.totals.meteorological_tables.valueOf() - weather.totals.meteorological_tables_unread.length} 個を読み、
+        {weather.totals.months_with_table} か月ぶんの観測 {weather.totals.records.toLocaleString("ja-JP")} 件を取り出した。
+      </p>
+      <WeatherChart w={weather} />
+      {weather.totals.meteorological_tables_unread.length > 0 && (
+        <p className="small">
+          読めなかった表が {weather.totals.meteorological_tables_unread.length} 個ある ——
+          {weather.totals.meteorological_tables_unread.join("・")}。
+          前後から年は推測できるが、<strong>黙って推測せず、読めなかったものとして数えている</strong>。
+        </p>
+      )}
 
       <h2>事前登録した主張は落ちた</h2>
       <div className="note note--warn">
