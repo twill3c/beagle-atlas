@@ -116,6 +116,44 @@ def build() -> dict:
         },
     ]
 
+    baseline_path = DATA / "baseline.json"
+    if baseline_path.exists():
+        b = json.loads(baseline_path.read_text(encoding="utf-8"))
+        name = b["by_kind"]["name"]
+        desc = b["by_kind"]["description"]
+        records.append(
+            {
+                "id": "N-4",
+                "kind": "premise",
+                "registered": "2026-09-04",
+                "judged": "2026-09-05",
+                "title": "索引の見出し語は、抽出器の再現率を測る物差しになる",
+                "claim": (
+                    "1845 年の索引は語と頁の対応表なので、"
+                    "見出し語のうち本文から拾えた率をそのまま再現率にできる(閾値 0.90)。"
+                ),
+                "threshold": "見出し語の再現率 ≥ 0.90",
+                "measured": (
+                    f"名前の型 {name['entries']} 件は {name['entry_level_recall']:.3f}、"
+                    f"説明文の型 {desc['entries']} 件は {desc['entry_level_recall']:.3f}"
+                ),
+                "verdict": "撤回",
+                "distance": "—",
+                "why_it_matters": (
+                    "見出し語の約 4 分の 1 は、編者が書いた説明文であって本文中の文字列ではない"
+                    "(「Absence of trees in Pampas」のような形)。**文字列として本文に存在しない**ので、"
+                    "どんな抽出器でも拾えない。閾値 0.90 は達成不可能だった。"
+                ),
+                "what_we_did_not_do": (
+                    "閾値を下げて通す、という直し方はしなかった。物差しの側が間違っているので、"
+                    "索引を再現率に使うなら名前の型に限る —— そう決めたうえで、"
+                    "新しい閾値は上回るべき相手(ベースライン)を実測してから置き直す。"
+                ),
+                "source": "data/baseline.json",
+                "page": "/index-gold/",
+            }
+        )
+
     return {
         "schema": "beagle-atlas/discarded@1",
         "policy": (
