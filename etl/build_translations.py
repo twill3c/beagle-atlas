@@ -52,6 +52,11 @@ MODULES = [
     "etl.translations_c08_d",
     "etl.translations_c08_e",
     "etl.translations_c08_f",
+    "etl.translations_c09_a",
+    "etl.translations_c09_b",
+    "etl.translations_c09_c",
+    "etl.translations_c09_d",
+    "etl.translations_c09_e",
 ]
 
 # 日本語の中に紛れた半角ラテン文字を検出する(GEN-CHARS の型)。
@@ -82,6 +87,7 @@ KEPT_FOREIGN = {
     "solen", "ampullariae", "hydrophilus",  # 単独で使われる種小名
     "petise",      # Avestruz Petise の小文字表記
     "inermis",     # Cynara の変種名
+    "conejos",     # マゼランが用いたスペイン語(著者が原語のまま引く)
 }
 
 
