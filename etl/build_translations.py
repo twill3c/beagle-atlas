@@ -66,6 +66,10 @@ MODULES = [
     "etl.translations_c11_c",
     "etl.translations_c11_d",
     "etl.translations_c11_e",
+    "etl.translations_c12_a",
+    "etl.translations_c12_b",
+    "etl.translations_c12_c",
+    "etl.translations_c12_d",
 ]
 
 # 日本語の中に紛れた半角ラテン文字を検出する(GEN-CHARS の型)。
@@ -97,6 +101,7 @@ KEPT_FOREIGN = {
     "petise",      # Avestruz Petise の小文字表記
     "inermis",     # Cynara の変種名
     "conejos",     # マゼランが用いたスペイン語(著者が原語のまま引く)
+    "megapodius", "albicollis",  # Pteroptochos の種小名(属名を離して単独で使われる)
 }
 
 
