@@ -46,11 +46,43 @@ MODULES = [
     "etl.translations_c07_b",
     "etl.translations_c07_c",
     "etl.translations_c07_d",
+    "etl.translations_c08_a",
+    "etl.translations_c08_b",
+    "etl.translations_c08_c",
+    "etl.translations_c08_d",
+    "etl.translations_c08_e",
+    "etl.translations_c08_f",
 ]
 
 # 日本語の中に紛れた半角ラテン文字を検出する(GEN-CHARS の型)。
 # 学名・書誌参照・数値は正当なので、カタカナに挟まれた単独のラテン小文字だけを見る
 LATIN_IN_KANA = re.compile(r"[ァ-ヶー][A-Za-z][ァ-ヶー]")
+
+# 編集用の記法が訳文に漏れるのを止める。
+# 訳文モジュールの docstring では強調に ** を使うが、**訳文そのものは素の本文**で
+# なければならない —— 漏れると読み手の画面にアスタリスクがそのまま出る。
+# 第 8 章で一度実際に漏らしたので、目視でなく検査で捕まえる形にした。
+EDITORIAL_MARKUP = re.compile(r"\*\*|^#{1,6} |\[\[|\]\]", re.MULTILINE)
+
+# 訳し漏らした英単語が日本語のなかに残るのを止める。
+# 学名・書誌参照・原語の引用は正当なので**狙いを絞る** —— 日本語に直接隣接する
+# 小文字のラテン語だけを見て、直前に大文字始まりの語があるもの(種小名・書誌の
+# 一部)は除く。第 5・6・8 章で実際に 4 件(territory ×2・viceroy・favour)を
+# 目視で見つけたので機械化した。
+# 残すと決めた原語は KEPT に**登録する** —— 総当たりの許可リストにすると
+# 形骸化するので、ここは小さく保つ(HC-160「例外を足し続けてゲートを壊す」)。
+_JP = r"[ぁ-んァ-ヶー一-龥、。「」]"
+BARE_ENGLISH = re.compile(rf"(?<![A-Za-z][ .]){_JP}[ 　]?([a-z]{{3,}})[ 　]?{_JP}")
+KEPT_FOREIGN = {
+    "huachos",     # 散らばったダチョウの卵(著者が原語のまま使う)
+    "casarita",    # 小さな家建て(鳥の俗称)
+    "mactra",      # 貝の属名の小文字表記
+    "rincon",      # 二辺を水に守られた地形
+    "nata", "niata",  # 短頭の牛の品種名
+    "solen", "ampullariae", "hydrophilus",  # 単独で使われる種小名
+    "petise",      # Avestruz Petise の小文字表記
+    "inermis",     # Cynara の変種名
+}
 
 
 def load() -> dict[str, str]:
@@ -76,6 +108,20 @@ def main() -> None:
     bad = {k: LATIN_IN_KANA.findall(v) for k, v in items.items() if LATIN_IN_KANA.search(v)}
     if bad:
         raise ValueError(f"カタカナに半角ラテン文字が混入: {bad}")
+
+    # 編集用の記法が訳文に漏れていないか(docstring の強調が本文に落ちる型)
+    marked = {k: EDITORIAL_MARKUP.findall(v) for k, v in items.items() if EDITORIAL_MARKUP.search(v)}
+    if marked:
+        raise ValueError(f"訳文に編集用の記法が混入: {marked}")
+
+    # 訳し漏らした英単語が残っていないか(残す原語は KEPT_FOREIGN に登録する)
+    left: dict[str, list[str]] = {}
+    for k, v in items.items():
+        ws = [w for w in BARE_ENGLISH.findall(v) if w not in KEPT_FOREIGN]
+        if ws:
+            left[k] = ws
+    if left:
+        raise ValueError(f"訳文に未訳の英単語が残存(残すなら KEPT_FOREIGN に登録): {left}")
 
     by_chapter: dict[str, int] = {}
     for k in items:
