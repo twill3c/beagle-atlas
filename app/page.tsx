@@ -170,6 +170,17 @@ export default function Home() {
         「SEPTEMBER 18th」で、訂正はこの台帳の側にある。
       </p>
 
+      <p>
+        S-B 側の五件(E-03〜E-07)には<strong>形の揃った傾向</strong>がある。
+        18th←8th・of←or・for←fox・Orsono←Osorno・Collnet←Collnett —— どれも
+        <strong>短い語が一字ないし一語ぶん崩れる形</strong>で、長い語や文の単位で崩れた例は
+        五件を通して一つも出ていない。しかも E-06 と E-07 は
+        <strong>S-A を持ち出さなくても裁定できた</strong> —— どちらも S-B 自身が同じ語を
+        別の箇所では正しく綴っており、<strong>読み本文の多数派が自らの外れ値を否定した</strong>。
+        この五件は照合のために本文を走査して見つけたものではなく、
+        <strong>訳すために読んでいて出会った</strong>ものである。
+      </p>
+
       <h2>総語数の差は、本文の差ではない</h2>
 
       <ul className="stats">
